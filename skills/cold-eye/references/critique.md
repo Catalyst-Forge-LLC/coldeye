@@ -5,7 +5,7 @@ owns the shape.
 
 A system subject may need a **split verdict**. Do not flatten
 that into one word. Use the second form. Include
-`**Repo:** not attempted` only when the card's missing-tree
+`**System:** not attempted` only when the card's missing-tree
 fallback fired.
 
 **Verdict forms** (pick one):

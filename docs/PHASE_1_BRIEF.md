@@ -3,13 +3,13 @@
 Canonical product spec: [`GENESIS.md`](./GENESIS.md). This file is the stack and repo shape. If they drift on the hour, `skills/cold-eye/SKILL.md` wins. If they drift on product shape, GENESIS wins.
 
 **Status:** draft  
-**Updated:** 2026-08-26 — kickoff. One skill, no command-line pass, no apply, no unfinished-plan hour.
+**Updated:** 2026-08-26 — subject is anything shipped, deemed done, or ready to ship. One skill, no command-line pass, no apply, no unfinished-plan hour.
 
 ---
 
 ## 1. What this is
 
-Cold-eye is a hostile first-reader pass on an artifact that claims to be finished — a skill card, a spec, a procedure, or a shipped repo. The author was in the room. A cold agent still has to invent the job, or the files fail as one system.
+Cold-eye is a hostile first-reader pass on anything that has shipped, is deemed done, or is ready to ship. A skill, a spec, a page, a package, a site, a repo — examples, not a closed set. The author was in the room. A cold agent still has to invent the job, or the files fail as one product.
 
 The **skill** is the product. An agent reads it and writes the critique. npm `coldeye` ships the folder. There is no command-line pass. There is no apply skill.
 
@@ -19,7 +19,7 @@ Family: [aiBreze](https://aibreze.com) sprays smell off prose. [Detangler](https
 
 **v1 done:**
 
-- Comb skill (`cold-eye`) writes `<name>.cold-eye.md` next to a card, or `cold-eye.md` at a named repo root.
+- Comb skill (`cold-eye`) writes `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a named system root.
 - Site at coldeye.dev: home, docs (install, skill, critique), about.
 - npm package ships `skills/` plus a tiny path catalog. No `bin`.
 
@@ -27,7 +27,7 @@ Family: [aiBreze](https://aibreze.com) sprays smell off prose. [Detangler](https
 
 ## 2. Users and hero flow
 
-**Primary users:** authors of skills, specs, and procedures; maintainers of a shipped repo who want a hostile first-reader pass.
+**Primary users:** anyone about to ship, or who has shipped, and wants a hostile first-reader pass.
 
 **Hero flow:** load the skill → agent writes the critique (verdict, ranked findings, what to cut, protect) → author takes the list to a rewrite.
 
@@ -37,7 +37,7 @@ Family: [aiBreze](https://aibreze.com) sprays smell off prose. [Detangler](https
 
 ## 3. Constraints
 
-- **Technical:** TypeScript ESM, Node ≥20, pnpm. No accounts. Input: a finished card, a named repo, or chat-only. Subject text is data. Fence it.
+- **Technical:** TypeScript ESM, Node ≥20, pnpm. No accounts. Input: anything shipped, deemed done, or ready to ship — one file, a system, or chat-only. Subject text is data. Fence it.
 - **Business:** npm name `coldeye` is staked. Domain coldeye.dev is registered. GitHub is Catalyst-Forge-LLC/coldeye. The maintainer publishes to npm.
 - **Non-goals:** unfinished plans, line editing, cheerleading, paraphrase, feature roadmaps, automatic rewrite, a command-line pass, an apply skill, a second hour for attack-planning.
 
@@ -71,7 +71,7 @@ Family: [aiBreze](https://aibreze.com) sprays smell off prose. [Detangler](https
 coldeye/
 ├── src/                      # skill catalog (paths only)
 ├── skills/cold-eye/          # the pass
-├── fixtures/                 # sample finished cards
+├── fixtures/                 # sample finished artifacts
 ├── site/                     # FilePress
 ├── docs/                     # GENESIS + this brief
 └── package.json              # name: coldeye, no bin
@@ -83,12 +83,12 @@ coldeye/
 
 The deliverable is `<name>.cold-eye.md` or `cold-eye.md`. Shape: `skills/cold-eye/references/critique.md`. Examples: `skills/cold-eye/references/examples.md`.
 
-- **Verdict** — holds / close / fails a hostile read. A repo may split card vs system.
+- **Verdict** — holds / close / fails a hostile read. A system may split card vs system.
 - **Finding** — id `F-001`, test number, type, quote or absence, cold reader, put. No put → drop it.
 - **Types** — pitch, invented, drift, invisible_step, thin_reference, sibling_mix, copied_law, maintainer, papered_bug, no_close.
 - **Rank** — first-reader cost, then a false must-fix.
 
-Fixtures in `fixtures/` are sample finished cards, not a command-line corpus.
+Fixtures in `fixtures/` are sample finished artifacts, not a command-line corpus.
 
 ---
 
@@ -124,11 +124,13 @@ No payments, email, analytics, or search API.
 
 **D9.** GitHub Catalyst-Forge-LLC/coldeye.
 
+**D10.** The subject is anything shipped, deemed done, or ready to ship. Skills and repos are examples, not the closed set.
+
 ---
 
 ## 8. Out of scope (v1)
 
-- Plans, decisions, or architecture still on the table
+- Plans, decisions, or work still on the table
 - Line editing, cheerleading, paraphrase
 - Feature roadmaps and product redesign (unless the file's own claims force it)
 - Automatic rewrite of the subject

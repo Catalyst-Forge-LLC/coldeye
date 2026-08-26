@@ -1,6 +1,6 @@
 # Cold-eye: Build Specification
 
-Version 0.1. Product spec.
+Version 0.2. Product spec.
 
 Package: `coldeye` on npm. Site: coldeye.dev. GitHub: Catalyst-Forge-LLC/coldeye. Same shelf as Detangler and aiBreze.
 
@@ -12,9 +12,9 @@ The metaphor carries the design, so state it everywhere the product is described
 
 - **Finished, not forming.** The subject claims to be done. A direction you might still change is out of scope. Do not add a second hour for attack-planning.
 - **Read, then write the critique.** The skill is the pass. An agent reads it and writes the critique file. It does not rewrite the subject unless they asked.
-- **Family resemblance.** aiBreze sprays smell off prose. Detangler combs what editing tangled in a draft. Cold-eye is the next bottle: hostile-read a finished skill, spec, procedure, or repo. Same register, different job. Same shape: a skill an agent reads, not a command that calls a model.
+- **Family resemblance.** aiBreze sprays smell off prose. Detangler combs what editing tangled in a draft. Cold-eye is the next bottle: hostile-read what has shipped, is deemed done, or is ready to ship. Same register, different job. Same shape: a skill an agent reads, not a command that calls a model.
 
-Header lockup: *A hostile read of a finished skill, spec, or repo.*
+Header lockup: *A hostile read of what claims to be done.*
 
 Hero may still use: *What a cold agent still has to invent.* That line is opaque in the header by itself.
 
@@ -24,13 +24,13 @@ Naming rule: use "Cold-eye" for the product. Package, domain, and repo are `cold
 
 ## 1. Purpose
 
-Cold-eye is a hostile first-reader pass on an artifact that claims to be finished — a skill card, a spec, a procedure, or a shipped repo. The author was in the room. The file looks done. A cold agent or a picky editor still has to invent the job: schema, filenames, write-back, what done looks like, when to refuse. On a repo, locally coherent files can still fail as one system.
+Cold-eye is a hostile first-reader pass on anything that has shipped, is deemed done, or is ready to ship — a skill, a spec, a procedure, a page, a README, a package, a site, a repo. The list is examples, not a closed set. The gate is the claim: done, or ready. The author was in the room. The file looks finished. A cold agent or a picky editor still has to invent the job: schema, filenames, write-back, what done looks like, when to refuse. On a system, locally coherent files can still fail as one product.
 
 A brochure can be sharp and still fail. So can a pitch.
 
 The first release produces a critique. The skill writes it. It does not rewrite.
 
-It is deliberately not a line editor, not a cheerleader, and not a second paraphrase. Missing capability is a defect in the claim, not a feature roadmap. Scope that turns a skill review into a product redesign is out unless the file's own claims force it.
+It is deliberately not a line editor, not a cheerleader, and not a second paraphrase. Missing capability is a defect in the claim, not a feature roadmap. Scope that turns a review into a product redesign is out unless the file's own claims force it.
 
 One injury it catches is the invented step: the hour names a check and never binds the command, the filename, or the shape. That is not the whole job. The same pass finds a pitch that never becomes start / read / write / stop, two files that contradict as a system, a landing-page command that does not finish the checks under it, discovery copy that would fire on a sibling's job, standing rules copied until they drift, maintainer notes on a buyer page, a procedure that papers over a tool bug, an hour that never closes.
 
@@ -40,14 +40,14 @@ The method is first-reader order plus ten tests. An editor's trick and a softwar
 
 ### In scope
 
-- A finished card: `SKILL.md`, a spec, a procedure.
-- A finished repo the author named, when a tree and a shell are available.
+- Anything shipped, deemed done, or ready to ship. One file or a system.
+- Examples, not a closed set: a skill, a spec, a procedure, a page, a README, a package, a site, a repo.
 - Chat-only, same critique shape, when they said stay in chat.
 - One subject per run.
 
 ### Out of scope
 
-- Plans, decisions, or architecture still on the table.
+- Plans, decisions, or work still on the table.
 - Line editing, cheerleading, or a second paraphrase that agrees harder.
 - A feature roadmap. Missing capability is a defect in the claim unless they asked you to design the missing piece.
 - Automatic rewrite. The skill reports. Rewrite only if they asked.
@@ -71,10 +71,10 @@ The agent locates the subject, reads by the path below, runs the ten tests in or
 **Write to:**
 
 - One file → `<name>.cold-eye.md` next to it (`SKILL.md` → `SKILL.cold-eye.md`).
-- A repo → `cold-eye.md` at the root they named.
+- A system → `cold-eye.md` at the root they named.
 - Chat only → stay in chat, same shape.
 
-A repo path needs the tree and a shell. If those are missing, run the one-card path on what they pasted and write the missing-tree marker that `references/critique.md` specifies.
+A system path needs the tree and a shell. If those are missing, run the one-card path on what they pasted and write the missing-tree marker that `references/critique.md` specifies.
 
 If `references/critique.md` or `references/examples.md` is missing, stop and say so. Do not invent a shape.
 
@@ -82,7 +82,7 @@ If `references/critique.md` or `references/examples.md` is missing, stop and say
 
 **One card.** Start on that file. Open only what it tells you to open, then the tools it names.
 
-**A repo.** Do not start in the spec. The author lives there. Read in first-reader order, then open the code:
+**A system.** Do not start in the spec. The author lives there. Read in first-reader order, then open what shipped:
 
 1. The lockup, as if that were the whole page.
 2. The public page a buyer hits first. For a package, that is also the npm README, not only the marketing site.
@@ -117,7 +117,7 @@ Verdict forms (pick one):
 - One subject: `**Verdict:** holds` or `close` or `fails a hostile read.`
 - A system: `**Verdict:** <card> as a card, <system> as a system.` Each side takes one of the three values.
 
-Include `**Repo:** not attempted` only when the missing-tree fallback fired.
+Include `**System:** not attempted` only when the missing-tree fallback fired.
 
 Every finding: id (`F-001`), test number, type from the table, then either a quoted line or an absence. Cold reader: what they do instead. Put: what to put in the file. No action-shaped put → drop it.
 
@@ -137,7 +137,7 @@ Do not implement unless asked. Do not offer a cheerleader close.
 
 ## 7. Sample subjects
 
-`fixtures/` are finished cards (or tiny repos) with injected faults, for trying the skill. Each folder has the subject file. `expected.md`, where present, names the injected faults. Nothing here is a command-line corpus.
+`fixtures/` are finished artifacts (or tiny systems) with injected faults, for trying the skill. Each folder has the subject file. `expected.md`, where present, names the injected faults. Nothing here is a command-line corpus.
 
 | Folder | Injected fault | What the skill should catch |
 |---|---|---|
@@ -163,7 +163,7 @@ skills/cold-eye/
     └── examples.md
 ```
 
-**SKILL.md description** (make it pushy; agents undertrigger): "Hostile read of a finished skill, spec, procedure, or repo. Checks whether a cold agent can run the job without inventing it, and whether the files describe one system. Use when the author asks for a cold-eye pass, a hostile read, extreme scrutiny, or whether the instructions would survive a picky editor. Not for plans, decisions, or architecture still on the table. Not for line editing, cheerleading, or a second paraphrase of the same draft."
+**SKILL.md description** (make it pushy; agents undertrigger): "Hostile read of anything shipped, deemed done, or ready to ship — a skill, a spec, a site, a package, a repo. Checks whether a cold agent can run the job without inventing it, and whether the files describe one system. Use when the author asks for a cold-eye pass, a hostile read, extreme scrutiny, or whether what they shipped would survive a picky editor. Not for plans, decisions, or work still on the table. Not for line editing, cheerleading, or a second paraphrase of the same draft."
 
 **SKILL.md body:** the hour (locate, read, ten tests, write the critique, stop), pointers to the reference files, refuse unfinished work in the description. Do not name another product's hour in the description.
 
@@ -180,7 +180,7 @@ Not in the first build. Listed so the method does not preclude them.
 
 - Multi-card packs: one critique that ranks across a family of skills without folding them into one hour.
 - Diff mode: two versions of a card, report only findings introduced between them.
-- A public sample critique on the homepage, from a real finished card run in the open. First public proof is "we ran this on X and here is the critique."
+- A public sample critique on the homepage, from a real shipped subject run in the open. First public proof is "we ran this on X and here is the critique."
 
 Do not add an apply skill. Do not add an unfinished-plan hour.
 

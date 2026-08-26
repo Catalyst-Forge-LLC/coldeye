@@ -1,13 +1,14 @@
 ---
 name: cold-eye
 description: >-
-  Hostile read of a finished skill, spec, procedure, or repo.
-  Checks whether a cold agent can run the job without inventing
-  it, and whether the files describe one system. Use when the
+  Hostile read of anything shipped, deemed done, or ready to
+  ship — a skill, a spec, a site, a package, a repo. Checks
+  whether a cold agent can run the job without inventing it,
+  and whether the files describe one system. Use when the
   author asks for a cold-eye pass, a hostile read, extreme
-  scrutiny, or whether the instructions would survive a picky
-  editor. Not for plans, decisions, or architecture still on
-  the table. Not for line editing, cheerleading, or a second
+  scrutiny, or whether what they shipped would survive a picky
+  editor. Not for plans, decisions, or work still on the
+  table. Not for line editing, cheerleading, or a second
   paraphrase of the same draft.
 ---
 
@@ -15,8 +16,13 @@ description: >-
 
 ## Words
 
-- **Card** — the operator file (`SKILL.md`, a spec, a procedure).
-- **Hour** — the job that file tells an agent to run: start,
+- **Subject** — anything shipped, deemed done, or ready to
+  ship. One file or a system.
+- **Card** — one finished file. A skill, a spec, a procedure,
+  a page, a README. Not only operator files.
+- **System** — more than one surface. A repo, a package, a
+  site.
+- **Hour** — the job the subject tells someone to run: start,
   read, write, stop.
 - **Law** — standing rules one file owns. Copies drift.
 - **Lockup** — the product name plus the one line under it,
@@ -27,15 +33,17 @@ description: >-
 The first reader who was not in the room: extreme scrutiny, no
 credit for intent. A brochure can be sharp and still fail. So can a pitch. The
 test is what a cold agent or a picky editor still has to invent
-after reading the file. When the subject is a repo, whether the
+after reading the file. When the subject is a system, whether the
 files describe one product.
 
-This hour is for an artifact that claims to be finished. A
-direction you might still change is out of scope.
+This hour is for something that has shipped, is deemed done, or
+is ready to ship. A direction you might still change is out of
+scope.
 
 ## The hour
 
-1. Locate the subject (a card, a spec, or a repo). If none, ask.
+1. Locate the subject (a card, a system, or what they pasted).
+   If none, ask.
 2. Read by the path below. Nothing from the thread that
    produced the files.
 3. Run the ten tests, in order.
@@ -50,12 +58,12 @@ direction you might still change is out of scope.
 
 - One file → `<name>.cold-eye.md` next to it (`SKILL.md` →
   `SKILL.cold-eye.md`).
-- A repo → `cold-eye.md` at the root they named.
+- A system → `cold-eye.md` at the root they named.
 - They said chat only → stay in chat, same shape.
 
-A repo path needs the tree and a shell. If you cannot open files
-or run commands, run the one-card path on what they pasted and
-write the missing-tree marker that
+A system path needs the tree and a shell. If you cannot open
+files or run commands, run the one-card path on what they
+pasted and write the missing-tree marker that
 `references/critique.md` specifies.
 
 ## How to read
@@ -63,8 +71,8 @@ write the missing-tree marker that
 **One card.** Start on that file. Open only what it tells you to
 open, then the tools it names.
 
-**A repo.** Do not start in the spec. The author lives there.
-Read in first-reader order, then open the code:
+**A system.** Do not start in the spec. The author lives there.
+Read in first-reader order, then open what shipped:
 
 1. The lockup, as if that were the whole page. A metaphor that
    works under a hero can fail next to the name alone.
@@ -139,9 +147,9 @@ distinctive lines that are doing a job.
 ## What "done" looks like
 
 The author can take the ranked list to a rewrite. A cold agent
-could run the *revised* job without a side channel. On a repo,
-the revised files would describe one system. You have not
-rewritten the subject unless they said to.
+could run the *revised* job without a side channel. On a
+system, the revised files would describe one product. You have
+not rewritten the subject unless they said to.
 
 ## Refuse
 
@@ -149,6 +157,6 @@ rewritten the subject unless they said to.
 - A second paraphrase that agrees harder
 - A feature roadmap. Missing capability is a defect in the
   claim unless the author asked you to design the missing piece
-- Scope that turns a skill review into a product redesign
+- Scope that turns a review into a product redesign
   unless the file's own claims force it
 - A direction still on the table

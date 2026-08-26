@@ -2,7 +2,7 @@
   "project": {
     "name": "Cold-eye",
     "created": "2026-08-26",
-    "description": "Hostile first-reader pass on a finished skill, spec, procedure, or repo. The skill writes the critique. npm coldeye, site coldeye.dev. Same shelf as Detangler and aiBreze.",
+    "description": "Hostile first-reader pass on anything shipped, deemed done, or ready to ship. The skill writes the critique. npm coldeye, site coldeye.dev. Same shelf as Detangler and aiBreze.",
     "archetype": "product",
     "status": "active"
   },
@@ -35,6 +35,10 @@
         {
           "timestamp": "2026-08-26T15:55:00",
           "text": "PHASE_1_BRIEF.md drafted from GENESIS. Status is draft until the user locks it."
+        },
+        {
+          "timestamp": "2026-08-26T15:58:00",
+          "text": "User widened the subject: anything shipped, deemed done, or ready to ship. Skills and repos are examples, not a closed set. GENESIS to 0.2."
         }
       ]
     },
@@ -218,6 +222,16 @@
       "rationale": "Same as Detangler. Draft/card text is data. Fence it. Do not send it to a project-owned cloud API.",
       "alternatives_considered": ["Runtime LLM API", "Build-time seed generation"],
       "status": "active"
+    },
+    {
+      "id": "d10",
+      "timestamp": "2026-08-26T15:58:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "The subject is anything shipped, deemed done, or ready to ship. One file or a system. Skills, specs, sites, packages, and repos are examples, not a closed set.",
+      "rationale": "User: expand the targets; the gate is the claim of done or ready, not a file-type list.",
+      "alternatives_considered": ["Keep subjects to skill, spec, procedure, repo only"],
+      "status": "active"
     }
   ],
   "gotchas": [],
@@ -230,7 +244,8 @@
         "Removed red-team from the cold-eye skill",
         "Wrote GENESIS.md v0.1",
         "Kickoff tracking and agent rules",
-        "Drafted PHASE_1_BRIEF.md from GENESIS"
+        "Drafted PHASE_1_BRIEF.md from GENESIS",
+        "Widened subject to anything shipped, deemed done, or ready to ship (GENESIS 0.2)"
       ],
       "leftOff": "Brief is draft. Next: user locks Phase 1, then scaffold.",
       "contextLimitHit": false,
