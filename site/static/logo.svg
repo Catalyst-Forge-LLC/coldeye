@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Cold-eye">
+	<title>Cold-eye</title>
+	<ellipse cx="32" cy="32" rx="26" ry="16" fill="#f4efe6" stroke="#2c241c" stroke-width="1.6"/>
+	<circle cx="32" cy="32" r="9" fill="#2c241c"/>
+	<circle cx="32" cy="32" r="3.2" fill="#f4efe6"/>
+	<path stroke="#2c241c" stroke-width="1.4" stroke-linecap="round" d="M8 32h6M50 32h6"/>
+</svg>

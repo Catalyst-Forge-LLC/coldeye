@@ -4,6 +4,7 @@ dist/
 site/build/
 site/docs/dist/
 site/static/skills/
+site/.svelte-kit/
 .DS_Store
 Thumbs.db
 .env

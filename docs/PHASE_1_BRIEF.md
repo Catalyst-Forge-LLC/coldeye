@@ -2,8 +2,8 @@
 
 Canonical product spec: [`GENESIS.md`](./GENESIS.md). This file is the stack and repo shape. If they drift on the hour, `skills/cold-eye/SKILL.md` wins. If they drift on product shape, GENESIS wins.
 
-**Status:** draft  
-**Updated:** 2026-08-26 — subject is anything shipped, deemed done, or ready to ship. One skill, no command-line pass, no apply, no unfinished-plan hour.
+**Status:** locked  
+**Updated:** 2026-08-26 — locked. Subject is anything shipped, deemed done, or ready to ship. One skill, no command-line pass, no apply, no unfinished-plan hour.
 
 ---
 
@@ -147,7 +147,7 @@ No payments, email, analytics, or search API.
 | # | Question | Owner / resolve by |
 | - | -------- | ------------------ |
 | 1 | Fixture set in GENESIS §7 — keep as the starting list? | Lock with this brief |
-| 2 | LocalBerth lease name and port for the FilePress site | Phase 2 scaffold |
+| 2 | LocalBerth lease `coldeye-site` on **5200** | Decided Phase 2 |
 | 3 | Paste-dumb install in v1, or later? | Deferred (GENESIS §11) |
 
 ---
