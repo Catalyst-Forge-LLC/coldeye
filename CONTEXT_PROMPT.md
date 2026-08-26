@@ -73,3 +73,4 @@ Unfinished plans, line editing, cheerleading, paraphrase, feature roadmaps, auto
 - 2026-08-26: aiBreze spray on the site. Overlay in `docs/aibreze-overlay.md`.
 - 2026-08-26: Phase 2 complete. Stabilizing lease claim, short URLs, and pack/zip checks.
 - 2026-08-26: `ensure-lease.mjs` retries claim without `--or-next`. `site:dev` exits with a human line if `filepress` is missing. Short URLs are FilePress path mounts plus `_redirects`.
+- 2026-08-26: Second aiBreze pass. Cut leftover mic-drops and the README invent-line stacked next to the name.

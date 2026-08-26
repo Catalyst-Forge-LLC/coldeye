@@ -6,8 +6,6 @@
 
 A hostile read of what claims to be done.
 
-What a cold agent still has to invent.
-
 Cold-eye is a hostile first-reader pass on anything shipped, deemed
 done, or ready to ship. It is a skill: an agent reads it and writes
 a critique.

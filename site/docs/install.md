@@ -34,7 +34,7 @@ Or clone the [repo](https://github.com/Catalyst-Forge-LLC/coldeye) and copy `ski
 
 Node.js 20+. The package is [`coldeye`](https://www.npmjs.com/package/coldeye) on npm.
 
-Example prompts: [Skill](/docs/skill). The [critique shape](/docs/critique).
+Prompts are on [Skill](/docs/skill). The file shape is on [Critique](/docs/critique).
 
 ## What the skill writes
 
@@ -43,5 +43,3 @@ Example prompts: [Skill](/docs/skill). The [critique shape](/docs/critique).
 | One file | `<name>.cold-eye.md` next to it |
 | A system | `cold-eye.md` at the root they named |
 | Chat only | Same shape, in the thread |
-
-The critique is the deliverable.
