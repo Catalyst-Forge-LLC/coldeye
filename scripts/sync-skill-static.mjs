@@ -5,6 +5,7 @@
  */
 import {
 	cpSync,
+	existsSync,
 	mkdirSync,
 	readdirSync,
 	readFileSync,
@@ -101,6 +102,12 @@ function writeStoreZip(entries, destPath) {
 
 for (const skillName of skillNames) {
 	const skillSrc = join(root, "skills", skillName);
+	if (!existsSync(join(skillSrc, "SKILL.md"))) {
+		console.error(
+			`sync-skill-static: missing skills/${skillName}/SKILL.md. The site zip is built from that folder.`,
+		);
+		process.exit(1);
+	}
 	const siteSkillDir = join(root, "site", "static", "skills", skillName);
 	const siteZipPath = join(root, "site", "static", "skills", `${skillName}.zip`);
 	const cursorSkillDir = join(root, ".cursor", "skills", skillName);

@@ -28,5 +28,10 @@ export default defineFilepressConfig({
 		{ label: "GitHub", href: github, icon: "github" },
 	],
 	topics: [],
-	paths: [{ url: "/docs", dir: "docs/dist" }],
+	paths: [
+		{ url: "/docs", dir: "docs/dist" },
+		{ url: "/install", dir: "static/install" },
+		{ url: "/skill", dir: "static/skill" },
+		{ url: "/critique", dir: "static/critique" },
+	],
 });

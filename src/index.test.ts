@@ -52,3 +52,47 @@ test("docs nav has a markdown file for every item", () => {
 	});
 	assert.ok(existsSync(join(packageRoot, "site", "docs", "dist", "index.html")));
 });
+
+test("short install and skill URLs have a local redirect page", () => {
+	const config = readFileSync(join(packageRoot, "site", "filepress.config.ts"), "utf8");
+	const redirects = readFileSync(join(packageRoot, "site", "static", "_redirects"), "utf8");
+	for (const slug of ["install", "skill", "critique"]) {
+		const html = readFileSync(join(packageRoot, "site", "static", slug, "index.html"), "utf8");
+		assert.match(html, new RegExp(`/docs/${slug}`));
+		assert.match(config, new RegExp(`url: "/${slug}"`));
+		assert.match(redirects, new RegExp(`^/${slug} /docs/${slug} 308`, "m"));
+	}
+});
+
+test("sync writes a zip the install page can download", () => {
+	execFileSync("node", [join(packageRoot, "scripts", "sync-skill-static.mjs")], {
+		cwd: packageRoot,
+	});
+	assert.ok(existsSync(join(packageRoot, "site", "static", "skills", "cold-eye.zip")));
+});
+
+test("ensure-lease prints a port and does not crash", () => {
+	const out = execFileSync(
+		"node",
+		[join(packageRoot, "scripts", "ensure-lease.mjs"), "coldeye-site", "5200"],
+		{ encoding: "utf8" },
+	);
+	const port = String(out).trim().split(/\r?\n/).at(-1) ?? "";
+	assert.match(port, /^\d+$/);
+});
+
+test("package tarball lists the skill folder", () => {
+	const out = execFileSync("pnpm", ["pack", "--dry-run"], {
+		cwd: packageRoot,
+		encoding: "utf8",
+		shell: process.platform === "win32",
+	});
+	assert.match(out, /skills\/cold-eye\/SKILL\.md/);
+	assert.doesNotMatch(out, /^bin\b/m);
+});
+
+test("no required runtime env", () => {
+	const example = readFileSync(join(packageRoot, ".env.example"), "utf8");
+	assert.match(example, /No runtime secrets/);
+	assert.doesNotMatch(example, /REQUIRED|must set/i);
+});

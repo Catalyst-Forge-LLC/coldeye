@@ -15,6 +15,17 @@ function run(args, cwd = root) {
 	if (result.status !== 0) process.exit(result.status ?? 1);
 }
 
+const filepress = spawnSync("filepress", ["--help"], {
+	encoding: "utf8",
+	windowsHide: true,
+	shell: process.platform === "win32",
+	stdio: "ignore",
+});
+if (filepress.error || filepress.status === 127) {
+	console.error("filepress is not on PATH. From the repo root: pnpm --dir site install");
+	process.exit(1);
+}
+
 run([join(root, "scripts/sync-skill-static.mjs")]);
 run([join(site, "scripts/build-docs.mjs")], site);
 

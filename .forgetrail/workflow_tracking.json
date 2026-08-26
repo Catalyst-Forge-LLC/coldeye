@@ -11,7 +11,7 @@
     "supportsSubagents": true,
     "supportsPlanMode": true
   },
-  "currentPhase": "2-scaffolding",
+  "currentPhase": "3-stabilization",
   "phases": {
     "1-architecture": {
       "status": "completed",
@@ -47,9 +47,9 @@
       ]
     },
     "2-scaffolding": {
-      "status": "in_progress",
+      "status": "completed",
       "startedAt": "2026-08-26T16:00:00",
-      "completedAt": null,
+      "completedAt": "2026-08-26T16:20:00",
       "exitCriteriaMet": [
         "Package initializes with pnpm (TypeScript ESM catalog, no bin)",
         "FilePress site serves locally",
@@ -66,12 +66,16 @@
         {
           "timestamp": "2026-08-26T16:08:00",
           "text": "Spine up: catalog tests pass, FilePress on 5200, home/install/skill/critique/about/posts verified. Confirm to mark Build complete."
+        },
+        {
+          "timestamp": "2026-08-26T16:20:00",
+          "text": "User said excellent, proceed. Phase 2 marked complete. aiBreze spray already on the site."
         }
       ]
     },
     "3-stabilization": {
-      "status": "not_started",
-      "startedAt": null,
+      "status": "in_progress",
+      "startedAt": "2026-08-26T16:20:00",
       "completedAt": null,
       "exitCriteriaMet": [],
       "exitCriteriaRemaining": [
@@ -79,7 +83,12 @@
         "Core workflow completes without infrastructure errors",
         "Error messages are human-readable (not just status codes)"
       ],
-      "notes": []
+      "notes": [
+        {
+          "timestamp": "2026-08-26T16:25:00",
+          "text": "Lease claim retries without --or-next. site:dev names a missing filepress. Short /install /skill /critique are FilePress path mounts plus Cloudflare _redirects. Catalog tests cover pack, zip, lease, and no required env."
+        }
+      ]
     },
     "4-feature-iteration": {
       "status": "not_started",
@@ -259,7 +268,15 @@
       "phase": "2-scaffolding",
       "session": 1,
       "issue": "localberth claim fails on this Windows shell when --notes has a space (shell:true splits it) or when --notes=value is combined with --or-next.",
-      "resolution": "Claim with --port and --or-next only. If the port is already listening, localberth still records the lease.",
+      "resolution": "ensure-lease.mjs claims with --port and --or-next, then retries without --or-next. Never pass --notes with a space (Windows shell:true splits it). If the port is already listening, localberth still records the lease.",
+      "category": "environment"
+    },
+    {
+      "timestamp": "2026-08-26T16:25:00",
+      "phase": "3-stabilization",
+      "session": 1,
+      "issue": "site/static/<slug>/index.html does not serve at /<slug> in filepress dev. SvelteKit 404s the page route first and 308s /<slug>/ back to /<slug>.",
+      "resolution": "Mount each stub as a FilePress paths entry (url /install ← static/install, same for skill and critique). Production still uses _redirects.",
       "category": "environment"
     }
   ],
@@ -267,16 +284,18 @@
     {
       "session": 1,
       "date": "2026-08-26",
-      "phasesWorked": ["1-architecture", "2-scaffolding"],
+      "phasesWorked": ["1-architecture", "2-scaffolding", "3-stabilization"],
       "accomplished": [
         "Removed red-team from the cold-eye skill",
         "Wrote GENESIS.md v0.1 then 0.2",
         "Kickoff tracking and agent rules",
         "Locked PHASE_1_BRIEF.md",
         "Widened subject to anything shipped, deemed done, or ready to ship",
-        "Scaffolded catalog package, FilePress site, fixtures"
+        "Scaffolded catalog package, FilePress site, fixtures",
+        "aiBreze spray on site copy",
+        "Stabilized lease, pack/zip checks, and short docs URLs"
       ],
-      "leftOff": "Phase 2 exit criteria look met. Confirm to mark Build complete, then stabilize or iterate.",
+      "leftOff": "Phase 3 stabilize work is on disk. Confirm to mark Stabilize complete, then Iterate (sample critique on the homepage).",
       "contextLimitHit": false,
       "approximateLines": 2500
     }

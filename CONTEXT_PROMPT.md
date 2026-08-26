@@ -56,7 +56,8 @@ The deliverable is `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a na
 - Quote a line or name an absence. No put → drop the finding.
 - Agents never `pnpm publish`. Site deploy is `pnpm ship` only (one pipeline).
 - Site copy speaks as the product. No corporate we. No builder I. Overlay: `docs/aibreze-overlay.md`.
-- LocalBerth: claim a named lease, then pass that port to FilePress. Do not assume 5182 or 5199.
+- LocalBerth: claim a named lease, then pass that port to FilePress. Do not assume 5182 or 5199. On Windows, `claim --or-next` can fail; `ensure-lease.mjs` retries without it and still prints a port.
+- Short `/install`, `/skill`, and `/critique` URLs: FilePress `paths` mounts `site/static/<slug>` so local `filepress dev` serves the stub. Pages also has `_redirects`. A file under `static/<slug>/index.html` alone 404s — SvelteKit owns `/<slug>` first. Canonical path is `/docs/install` (and the same for skill and critique).
 - The skill writes the critique. It does not rewrite unless they asked.
 - One standing file for the critique shape. The skill points. It does not restate.
 
@@ -69,3 +70,6 @@ Unfinished plans, line editing, cheerleading, paraphrase, feature roadmaps, auto
 - 2026-08-26: Phase 1 locked. Subject widened to anything that claims to be done.
 - 2026-08-26: Red-team / unfinished-plan hour removed from this product.
 - 2026-08-26: Phase 2 scaffold: catalog package, FilePress site, fixtures.
+- 2026-08-26: aiBreze spray on the site. Overlay in `docs/aibreze-overlay.md`.
+- 2026-08-26: Phase 2 complete. Stabilizing lease claim, short URLs, and pack/zip checks.
+- 2026-08-26: `ensure-lease.mjs` retries claim without `--or-next`. `site:dev` exits with a human line if `filepress` is missing. Short URLs are FilePress path mounts plus `_redirects`.

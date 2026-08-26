@@ -35,14 +35,17 @@ if (spawnSync("localberth", ["--help"], { ...opt, stdio: "ignore" }).error) {
 
 let port = getPort();
 if (!port) {
-	const claim = spawnSync(
-		"localberth",
-		["claim", name, "--port", preferred, "--or-next"],
-		{ ...opt, stdio: ["ignore", "pipe", "pipe"] },
-	);
+	const args = ["claim", name, "--port", preferred];
+	let claim = spawnSync("localberth", [...args, "--or-next"], {
+		...opt,
+		stdio: ["ignore", "pipe", "pipe"],
+	});
 	if (claim.status !== 0) {
-		console.warn(`localberth: claim ${name} failed; FilePress will try port ${preferred}`);
-		if (claim.stderr) console.warn(String(claim.stderr).trim());
+		claim = spawnSync("localberth", args, { ...opt, stdio: ["ignore", "pipe", "pipe"] });
+	}
+	if (claim.status !== 0) {
+		const why = String(claim.stderr || claim.stdout || "").trim() || `exit ${claim.status}`;
+		console.warn(`localberth: could not claim ${name} (${why}). FilePress will try port ${preferred}.`);
 		console.log(preferred);
 		process.exit(0);
 	}
