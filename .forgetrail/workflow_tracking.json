@@ -1,0 +1,240 @@
+{
+  "project": {
+    "name": "Cold-eye",
+    "created": "2026-08-26",
+    "description": "Hostile first-reader pass on a finished skill, spec, procedure, or repo. The skill writes the critique. npm coldeye, site coldeye.dev. Same shelf as Detangler and aiBreze.",
+    "archetype": "product",
+    "status": "active"
+  },
+  "agentContext": {
+    "primaryAgent": "cursor-agent",
+    "supportsSubagents": true,
+    "supportsPlanMode": true
+  },
+  "currentPhase": "1-architecture",
+  "phases": {
+    "1-architecture": {
+      "status": "in_progress",
+      "startedAt": "2026-08-26T15:48:00",
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "Tech choices confirmed",
+        "Folder structure confirmed",
+        "Data model shape confirmed",
+        "First feature batch defined",
+        "Claude's understanding verified by user",
+        "PHASE_1_BRIEF.md created, complete, and locked (docs/)",
+        "Major decisions recorded in workflow_tracking.json decisions[]"
+      ],
+      "notes": [
+        {
+          "timestamp": "2026-08-26T15:48:00",
+          "text": "Kickoff from root GENESIS.md (v0.1). npm coldeye and domain coldeye.dev already claimed. GitHub Catalyst-Forge-LLC/coldeye. Skill-only like Detangler. Red-team / unfinished-plan hour removed from this product."
+        },
+        {
+          "timestamp": "2026-08-26T15:55:00",
+          "text": "PHASE_1_BRIEF.md drafted from GENESIS. Status is draft until the user locks it."
+        }
+      ]
+    },
+    "2-scaffolding": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "Package initializes with pnpm (TypeScript ESM catalog, no bin)",
+        "FilePress site serves locally",
+        "Skill folder is the product (agent writes the critique)",
+        "Hero flow functions end to end (load skill → write critique file)",
+        "CONTEXT_PROMPT.md created and populated by merging PHASE_1_BRIEF.md (then template lessons as needed)",
+        "README.md created (from ForgeTrail template)",
+        "TODO.md created (from ForgeTrail template, seeded from PHASE_1_BRIEF §11)",
+        "IDEAS.md created (from ForgeTrail template)",
+        "Phase 2 doc scope only per WORKFLOW §1a (no premature extra templates)"
+      ],
+      "notes": []
+    },
+    "3-stabilization": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "Environment variables resolve correctly",
+        "Core workflow completes without infrastructure errors",
+        "Error messages are human-readable (not just status codes)"
+      ],
+      "notes": []
+    },
+    "4-feature-iteration": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "Core value proposition delivered",
+        "Hero flow works with real data including edge cases",
+        "Features tested beyond happy path"
+      ],
+      "notes": [],
+      "iterations": []
+    },
+    "5-refactoring": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "No file exceeds ~500 lines without justification",
+        "Shared utilities extracted",
+        "No duplicated patterns",
+        "Build passes after each refactor"
+      ],
+      "notes": []
+    },
+    "6-strategic-review": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "BRAND_AND_PRODUCT.md created (from ForgeTrail template)",
+        "TODO reorganized by brand value pillars",
+        "Features mapped to brand pillars",
+        "Gap between brand promise and product identified",
+        "IDEAS.md processed into TODO",
+        "Build order decided"
+      ],
+      "notes": []
+    },
+    "7-hardening": {
+      "status": "not_started",
+      "startedAt": null,
+      "completedAt": null,
+      "exitCriteriaMet": [],
+      "exitCriteriaRemaining": [
+        "CODE_QUALITY.md produced (from ForgeTrail template) and critical findings fixed",
+        "BLACK_HAT_REPORT.md produced (via ForgeTrail security audit) and critical/high findings fixed",
+        "All findings triaged into TODO.md with P0/P1/P2 priority",
+        "No silent failures in core workflows (grep for empty catch blocks)",
+        "DEPLOYMENT.md created (from ForgeTrail template)",
+        "TEST_PLAN.md complete or extended (from ForgeTrail template)",
+        "TECHNICAL_REFERENCE.md complete and current",
+        "Docs alignment audit passed (via ForgeTrail docs-alignment audit)",
+        "All documentation consolidated and cross-referenced"
+      ],
+      "notes": []
+    }
+  },
+  "decisions": [
+    {
+      "id": "d1",
+      "timestamp": "2026-08-26T15:48:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Archetype is product. npm package coldeye plus FilePress marketing site at coldeye.dev. Same shelf as Detangler and aiBreze.",
+      "rationale": "User staked the npm name, registered the domain, and named GitHub Catalyst-Forge-LLC/coldeye. Same distribution shape as Detangler: installable package, skill folder, public site.",
+      "alternatives_considered": ["internal-tool", "one-shot", "web app with accounts"],
+      "status": "active"
+    },
+    {
+      "id": "d2",
+      "timestamp": "2026-08-26T15:48:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "The skill is the product. One folder: skills/cold-eye. No command-line pass. No apply skill.",
+      "rationale": "The critique is agent behavior. User asked to keep Cold-eye clean and emulate Detangler's skill-only shape, without a second hour.",
+      "alternatives_considered": ["CLI pipeline", "apply sibling skill", "two critique modes in one package"],
+      "status": "active"
+    },
+    {
+      "id": "d3",
+      "timestamp": "2026-08-26T15:48:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "No PocketBase, no auth, no accounts. Local files plus a static FilePress site.",
+      "rationale": "State is the subject and the critique on disk. Nothing needs to outlive the browser or sync across devices.",
+      "alternatives_considered": ["SaaS with upload and accounts", "localStorage web app"],
+      "status": "active"
+    },
+    {
+      "id": "d4",
+      "timestamp": "2026-08-26T15:48:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Implementation language is TypeScript ESM on Node 20+, pnpm, matching Detangler and house rules. Catalog only — no bin.",
+      "rationale": "House rule: TypeScript ESM for all Node application and script code. Sibling package is already this stack.",
+      "alternatives_considered": ["Python skill scripts", "no package, site-only"],
+      "status": "active"
+    },
+    {
+      "id": "d5",
+      "timestamp": "2026-08-26T15:48:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "GitHub home is Catalyst-Forge-LLC/coldeye.",
+      "rationale": "User named the repo.",
+      "alternatives_considered": ["Different org or private-only"],
+      "status": "active"
+    },
+    {
+      "id": "d6",
+      "timestamp": "2026-08-26T15:48:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Unfinished-plan / attack-planning is out of this product. Refuse it. Do not name or ship a second hour for it.",
+      "rationale": "User already has that hour in the sibling temperpass repo. Keep Cold-eye a finished-artifact pass only.",
+      "alternatives_considered": ["Keep a red-team refuse-and-route in the skill", "Ship two skills in one package"],
+      "status": "active"
+    },
+    {
+      "id": "d7",
+      "timestamp": "2026-08-26T15:48:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Phase 2 exit criteria rewritten for a skill package + static site instead of web-app CRUD.",
+      "rationale": "Default tracking template assumes a PocketBase web app. Cold-eye is a local package.",
+      "alternatives_considered": ["Leave CRUD wording and mark N/A later"],
+      "status": "active"
+    },
+    {
+      "id": "d8",
+      "timestamp": "2026-08-26T15:48:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "Pruned Phase 7 auth-flow, payment-flow, LLM field-limit, API-error-format, Zod, and as-any exit criteria. Revisit if a paid tier or runtime API appears.",
+      "rationale": "v1 is a free npm package and static site. No accounts, no checkout, no project-owned model API.",
+      "alternatives_considered": ["Keep payment criteria as a reminder"],
+      "status": "active"
+    },
+    {
+      "id": "d9",
+      "timestamp": "2026-08-26T15:48:00",
+      "phase": "1-architecture",
+      "session": 1,
+      "decision": "No live web search. No project-owned LLM API. The hosting agent is the judgment.",
+      "rationale": "Same as Detangler. Draft/card text is data. Fence it. Do not send it to a project-owned cloud API.",
+      "alternatives_considered": ["Runtime LLM API", "Build-time seed generation"],
+      "status": "active"
+    }
+  ],
+  "gotchas": [],
+  "sessions": [
+    {
+      "session": 1,
+      "date": "2026-08-26",
+      "phasesWorked": ["1-architecture"],
+      "accomplished": [
+        "Removed red-team from the cold-eye skill",
+        "Wrote GENESIS.md v0.1",
+        "Kickoff tracking and agent rules",
+        "Drafted PHASE_1_BRIEF.md from GENESIS"
+      ],
+      "leftOff": "Brief is draft. Next: user locks Phase 1, then scaffold.",
+      "contextLimitHit": false,
+      "approximateLines": 2500
+    }
+  ]
+}

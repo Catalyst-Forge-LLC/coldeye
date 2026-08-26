@@ -1,0 +1,11 @@
+temp/
+node_modules/
+dist/
+site/build/
+site/docs/dist/
+site/static/skills/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!/.env.example
