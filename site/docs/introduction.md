@@ -6,11 +6,11 @@ title: Introduction
 
 You were in the room. The file looks finished. Locally coherent files can still fail as one product.
 
-npm **`coldeye`**. Site **coldeye.dev**. Same shelf as [Detangler](https://detangler.dev) and [aiBreze](https://aibreze.com).
+npm **`coldeye`**. Site **coldeye.dev**. Sibling of [Detangler](https://detangler.dev) and [aiBreze](https://aibreze.com).
 
-## Finished, not forming
+## Scope
 
-The gate is the claim: done, or ready. A skill, a spec, a page, a package, a site, a repo — examples, not a closed set. A direction you might still change is out of scope.
+The gate is the claim: done, or ready. A skill, a spec, a page, a package, a site, a repo: examples, not a closed set. A direction you might still change is out of scope.
 
 ## Read, then write the critique
 
@@ -24,8 +24,8 @@ The skill writes `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a syst
 
 It does not rewrite the subject unless you asked.
 
-## Two hooks
+## Next
 
-- [Install](/docs/install) — download the zip, put the folder where the table says
-- [Skill](/docs/skill) — the hour
-- [Critique](/docs/critique) — the file the author reads
+- [Install](/docs/install): download the zip, put the folder where the table says
+- [Skill](/docs/skill): the hour
+- [Critique](/docs/critique): the file the author reads

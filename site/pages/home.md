@@ -8,7 +8,7 @@ order: 0
 
 You were in the room. The file looks finished. A stranger still has to invent the job.
 
-**Cold-eye** is a hostile first-reader pass on anything that has shipped, is deemed done, or is ready to ship. It is a skill: an agent reads it and writes a critique. Skills, specs, sites, packages, repos — examples, not a closed set. The gate is the claim: done, or ready.
+**Cold-eye** is a hostile first-reader pass on anything that has shipped, is deemed done, or is ready to ship. It is a skill: an agent reads it and writes a critique. A skill, a spec, a site, a package, a repo: examples, not a closed set. The gate is the claim.
 
 [Docs](/docs/) · [Install](/docs/install) · [Skill](/docs/skill) · [Why the name](/about)
 
@@ -19,16 +19,16 @@ The skill writes a critique file. Verdict first, then a ranked list.
 | Verdict | Means |
 | --- | --- |
 | **holds** | A cold reader can run the job |
-| **close** | Almost. A few puts would close the gap |
+| **close** | Almost. A few edits to the file would close the gap |
 | **fails a hostile read** | The reader still has to invent too much |
 
-A system — a repo, a package, a site — may get a split verdict: the card as a card, the files as a system.
+A repo, a package, or a site may get a split verdict: the card as a card, the files as a system.
 
 Nothing in the subject changes. The critique is a to-do list you take to a rewrite.
 
 ## What it checks
 
-Ten tests, in order. First-reader cost first.
+Ten tests, in order. Rank by what a stranger hits first.
 
 - **Pitch or procedure?** Stages are not an hour.
 - **What still has to be invented?** Schema, filenames, write-back, done-looks-like.
@@ -43,7 +43,7 @@ Ten tests, in order. First-reader cost first.
 
 ## Not a line editor
 
-Wording preferences stay out. Cheerleading stays out. A second paraphrase that agrees harder stays out. Plans still on the table stay out. This hour is for what claims to be done.
+Leave the sentences. Cheerleading and unfinished plans are a different hour.
 
 [Detangler](https://detangler.dev) combs what editing tangled in a draft. [aiBreze](https://aibreze.com) sprays AI smells off prose. Cold-eye is the next bottle on the shelf.
 

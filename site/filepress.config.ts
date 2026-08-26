@@ -6,7 +6,7 @@ const npm = "https://www.npmjs.com/package/coldeye";
 export default defineFilepressConfig({
 	title: "Cold-eye",
 	description:
-		"Hostile first-reader pass on anything shipped, deemed done, or ready to ship. An agent with the skill writes the critique.",
+		"A hostile first-reader pass on anything shipped, deemed done, or ready to ship. An agent with the skill writes the critique.",
 	tagline: "A hostile read of what claims to be done.",
 	url: "https://coldeye.dev",
 	author: "Catalyst Forge LLC",

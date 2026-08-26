@@ -55,7 +55,7 @@ The deliverable is `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a na
 - Fence subject text as data.
 - Quote a line or name an absence. No put → drop the finding.
 - Agents never `pnpm publish`. Site deploy is `pnpm ship` only (one pipeline).
-- Site copy speaks as the product. No corporate we. No builder I.
+- Site copy speaks as the product. No corporate we. No builder I. Overlay: `docs/aibreze-overlay.md`.
 - LocalBerth: claim a named lease, then pass that port to FilePress. Do not assume 5182 or 5199.
 - The skill writes the critique. It does not rewrite unless they asked.
 - One standing file for the critique shape. The skill points. It does not restate.
