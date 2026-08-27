@@ -51,6 +51,17 @@ test("docs nav has a markdown file for every item", () => {
 		cwd: join(packageRoot, "site"),
 	});
 	assert.ok(existsSync(join(packageRoot, "site", "docs", "dist", "index.html")));
+	const built = readFileSync(join(packageRoot, "site", "docs", "dist", "index.html"), "utf8");
+	assert.match(built, /site-theme\.css/);
+	assert.ok(existsSync(join(packageRoot, "site", "docs", "dist", "assets", "site-theme.css")));
+	const tokens = readFileSync(
+		join(packageRoot, "site", "docs", "dist", "assets", "site-theme.css"),
+		"utf8",
+	);
+	assert.match(tokens, /--accent:/);
+	const docsCss = readFileSync(join(packageRoot, "site", "docs", "assets", "docs.css"), "utf8");
+	assert.match(docsCss, /var\(--bg/);
+	assert.doesNotMatch(docsCss, /#f6f3ee/);
 });
 
 test("short install and skill URLs have a local redirect page", () => {

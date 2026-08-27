@@ -250,12 +250,15 @@ function renderPage(item, bodyHtml, toc, prev, next) {
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>${escapeHtml(title)} · Cold-eye docs</title>
 	<meta name="description" content="Cold-eye documentation — ${escapeHtml(title)}" />
+	<link rel="icon" type="image/png" href="/favicon.png" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="stylesheet" href="/docs/assets/site-theme.css" />
 	<link rel="stylesheet" href="/docs/assets/docs.css" />
 </head>
 <body>
 	<header class="docs-top">
 		<button type="button" class="docs-menu-btn" data-docs-menu aria-label="Toggle docs menu">Menu</button>
-		<a class="docs-brand" href="/docs/">Cold-eye <span>docs</span></a>
+		<a class="docs-brand" href="/docs/"><img src="/logo.png" alt="" />Cold-eye <span>docs</span></a>
 		<nav class="docs-top-links">
 			<a href="/">Home</a>
 			<a href="/docs/install">Install</a>
@@ -289,6 +292,12 @@ function main() {
 	if (existsSync(outDir)) rmSync(outDir, { recursive: true, force: true });
 	mkdirSync(join(outDir, 'assets'), { recursive: true });
 	cpSync(join(docsRoot, 'assets'), join(outDir, 'assets'), { recursive: true });
+	const themeCss = join(root, '..', 'theme.css');
+	if (existsSync(themeCss)) {
+		cpSync(themeCss, join(outDir, 'assets', 'site-theme.css'));
+	} else {
+		writeFileSync(join(outDir, 'assets', 'site-theme.css'), '/* no site theme.css */\n');
+	}
 
 	const items = flatItems();
 	const mdFiles = new Set(

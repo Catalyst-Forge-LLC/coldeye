@@ -1,38 +1,20 @@
-/* aiBreze docs — same shell as ollanet (sidebar + TOC + prev/next) */
+/* Docs shell. Colors and fonts come from the site theme.css (Genie). */
 
 :root {
-	--docs-bg: #f6f3ee;
-	--docs-surface: #fffcf7;
-	--docs-ink: #1c1916;
-	--docs-ink-soft: #4a433c;
-	--docs-ink-faint: #7a7168;
-	--docs-rule: #e2d9ce;
-	--docs-accent: #8a3d2a;
-	--docs-accent-strong: #6d2e1f;
+	--docs-bg: var(--bg, #f0f8ff);
+	--docs-surface: var(--surface, #ffffff);
+	--docs-ink: var(--ink, #1a2333);
+	--docs-ink-soft: var(--ink-soft, #777777);
+	--docs-ink-faint: var(--ink-faint, #837f77);
+	--docs-rule: var(--rule, #d0e0f0);
+	--docs-accent: var(--accent, #2c7bb6);
+	--docs-accent-strong: var(--accent-strong, #1f5a8c);
 	--docs-sidebar-w: 15.5rem;
 	--docs-toc-w: 12rem;
-	--docs-font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-	--docs-display: 'Newsreader', 'Iowan Old Style', Georgia, serif;
-	--docs-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
-	--docs-radius: 10px;
-}
-
-@font-face {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400 700;
-	font-display: swap;
-	src: url('https://cdn.jsdelivr.net/fontsource/fonts/inter:vf@latest/latin-wght-normal.woff2')
-		format('woff2-variations');
-}
-
-@font-face {
-	font-family: 'Newsreader';
-	font-style: normal;
-	font-weight: 400 700;
-	font-display: swap;
-	src: url('https://cdn.jsdelivr.net/fontsource/fonts/newsreader:vf@latest/latin-wght-normal.woff2')
-		format('woff2-variations');
+	--docs-font: var(--font-sans, Inter, system-ui, sans-serif);
+	--docs-display: var(--font-serif, Georgia, serif);
+	--docs-mono: var(--font-mono, ui-monospace, monospace);
+	--docs-radius: var(--radius, 8px);
 }
 
 *,
@@ -79,10 +61,20 @@ a:hover {
 }
 
 .docs-brand {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
 	font-weight: 700;
 	color: var(--docs-ink);
 	text-decoration: none;
 	letter-spacing: -0.02em;
+}
+
+.docs-brand img {
+	width: 2rem;
+	height: 2rem;
+	object-fit: cover;
+	border-radius: 4px;
 }
 
 .docs-brand span {
@@ -221,8 +213,8 @@ a:hover {
 	overflow-x: auto;
 	padding: 0.9rem 1rem;
 	border-radius: var(--docs-radius);
-	background: #101820;
-	color: #e8f1ef;
+	background: var(--docs-ink);
+	color: var(--docs-bg);
 	font-family: var(--docs-mono);
 	font-size: 0.85rem;
 	line-height: 1.5;

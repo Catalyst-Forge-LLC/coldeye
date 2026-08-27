@@ -3,6 +3,7 @@
  * Claim/read the LocalBerth lease, then start FilePress on that port.
  */
 import { spawn, spawnSync } from "node:child_process";
+import { watch } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -28,6 +29,14 @@ if (filepress.error || filepress.status === 127) {
 
 run([join(root, "scripts/sync-skill-static.mjs")]);
 run([join(site, "scripts/build-docs.mjs")], site);
+
+let docsTimer;
+watch(join(site, "theme.css"), () => {
+	clearTimeout(docsTimer);
+	docsTimer = setTimeout(() => {
+		run([join(site, "scripts/build-docs.mjs")], site);
+	}, 200);
+});
 
 const lease = spawnSync(node, [join(root, "scripts/ensure-lease.mjs"), "coldeye-site", "5200"], {
 	encoding: "utf8",
