@@ -10,8 +10,8 @@ export default defineFilepressConfig({
 	tagline: "A hostile read of what claims to be done.",
 	url: "https://coldeye.dev",
 	author: "Catalyst Forge LLC",
-	logo: "/logo.svg",
-	ogImage: "/logo.svg",
+	logo: "/logo.png",
+	ogImage: "/logo.png",
 	homePage: "home",
 	nav: [
 		{ label: "Home", href: "/" },
