@@ -20,4 +20,4 @@ _Flat list until Phase 6. Seeded from PHASE_1_BRIEF first feature batch._
 ## Foundation
 
 - [ ] Docs alignment after first live ship
-- [ ] `pnpm pack --dry-run` before first npm publish (user publishes)
+- [x] `pnpm pack --dry-run` before first npm publish (user publishes) — `coldeye@0.1.0` is on npm

@@ -67,6 +67,7 @@ Unfinished plans, line editing, cheerleading, paraphrase, feature roadmaps, auto
 
 ## Recent Changes
 
+- 2026-08-28: Maintainer published `coldeye@0.1.0` to npm. Local version already matched. Agents still never publish.
 - 2026-08-26: Phase 1 locked. Subject widened to anything that claims to be done.
 - 2026-08-26: Red-team / unfinished-plan hour removed from this product.
 - 2026-08-26: Phase 2 scaffold: catalog package, FilePress site, fixtures.

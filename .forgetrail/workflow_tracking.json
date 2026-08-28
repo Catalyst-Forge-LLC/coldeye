@@ -87,6 +87,10 @@
         {
           "timestamp": "2026-08-26T16:25:00",
           "text": "Lease claim retries without --or-next. site:dev names a missing filepress. Short /install /skill /critique are FilePress path mounts plus Cloudflare _redirects. Catalog tests cover pack, zip, lease, and no required env."
+        },
+        {
+          "timestamp": "2026-08-28T01:33:00",
+          "text": "Maintainer published coldeye@0.1.0 to npm. Local package.json already 0.1.0. Site install copy already names the package."
         }
       ]
     },
