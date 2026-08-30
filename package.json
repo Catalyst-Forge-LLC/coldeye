@@ -1,6 +1,6 @@
 {
 	"name": "coldeye",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"private": false,
 	"type": "module",
 	"description": "Hostile first-reader pass on anything shipped, deemed done, or ready to ship. An agent with the skill writes the critique.",
