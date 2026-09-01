@@ -2,7 +2,7 @@
 
 Version 0.2. Product spec.
 
-Package: `coldeye` on npm. Site: coldeye.dev. GitHub: Catalyst-Forge-LLC/coldeye. Same shelf as Detangler and aiBreze.
+Package: `coldeye` on npm. Site: coldeye.dev. GitHub: Catalyst-Forge-LLC/coldeye. Same shelf as Detangler and Smell Check.
 
 ## 0. Name and metaphor
 
@@ -12,7 +12,7 @@ The metaphor carries the design, so state it everywhere the product is described
 
 - **Finished, not forming.** The subject claims to be done. A direction you might still change is out of scope. Do not add a second hour for attack-planning.
 - **Read, then write the critique.** The skill is the pass. An agent reads it and writes the critique file. It does not rewrite the subject unless they asked.
-- **Family resemblance.** aiBreze sprays smell off prose. Detangler combs what editing tangled in a draft. Cold-eye is the next bottle: hostile-read what has shipped, is deemed done, or is ready to ship. Same register, different job. Same shape: a skill an agent reads, not a command that calls a model.
+- **Family resemblance.** Smell Check sprays smell off prose. Detangler combs what editing tangled in a draft. Cold-eye is the next bottle: hostile-read what has shipped, is deemed done, or is ready to ship. Same register, different job. Same shape: a skill an agent reads, not a command that calls a model.
 
 Header lockup: *A hostile read of what claims to be done.*
 

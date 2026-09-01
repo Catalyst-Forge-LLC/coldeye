@@ -45,7 +45,7 @@ Ten tests, in order. Rank by what a stranger hits first.
 
 Leave the sentences. Cheerleading and unfinished plans are a different hour.
 
-[Detangler](https://detangler.dev) combs what editing tangled in a draft. [aiBreze](https://aibreze.com) sprays AI smells off prose. Cold-eye is the next bottle on the shelf.
+[Detangler](https://detangler.dev) combs what editing tangled in a draft. [Smell Check](https://smellcheck.dev) sprays AI smells off prose. Cold-eye is the next bottle on the shelf.
 
 ## Install
 

@@ -10,7 +10,7 @@ _Session continuity. Locked architecture lives in `docs/PHASE_1_BRIEF.md` and `.
 
 Cold-eye is a hostile first-reader pass on anything that has shipped, is deemed done, or is ready to ship. The **skill** is the product: an agent reads it and writes the critique. npm ships the folder. There is no command-line pass. There is no apply skill.
 
-Same shelf as Detangler and aiBreze. npm `coldeye`. Site coldeye.dev. GitHub Catalyst-Forge-LLC/coldeye.
+Same shelf as Detangler and Smell Check. npm `coldeye`. Site coldeye.dev. GitHub Catalyst-Forge-LLC/coldeye.
 
 Hero flow: load the skill → agent writes `<name>.cold-eye.md` or `cold-eye.md`.
 
@@ -55,7 +55,7 @@ The deliverable is `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a na
 - Fence subject text as data.
 - Quote a line or name an absence. No put → drop the finding.
 - Agents never `pnpm publish`. Site deploy is `pnpm ship` only (one pipeline).
-- Site copy speaks as the product. No corporate we. No builder I. Overlay: `docs/aibreze-overlay.md`.
+- Site copy speaks as the product. No corporate we. No builder I. Overlay: `docs/smellcheck.md`.
 - LocalBerth: claim a named lease, then pass that port to FilePress. Do not assume 5182 or 5199. On Windows, `claim --or-next` can fail; `ensure-lease.mjs` retries without it and still prints a port.
 - Short `/install`, `/skill`, and `/critique` URLs: FilePress `paths` mounts `site/static/<slug>` so local `filepress dev` serves the stub. Pages also has `_redirects`. A file under `static/<slug>/index.html` alone 404s — SvelteKit owns `/<slug>` first. Canonical path is `/docs/install` (and the same for skill and critique).
 - The skill writes the critique. It does not rewrite unless they asked.
@@ -71,8 +71,8 @@ Unfinished plans, line editing, cheerleading, paraphrase, feature roadmaps, auto
 - 2026-08-26: Phase 1 locked. Subject widened to anything that claims to be done.
 - 2026-08-26: Red-team / unfinished-plan hour removed from this product.
 - 2026-08-26: Phase 2 scaffold: catalog package, FilePress site, fixtures.
-- 2026-08-26: aiBreze spray on the site. Overlay in `docs/aibreze-overlay.md`.
+- 2026-08-26: Smell Check spray on the site. Overlay in `docs/smellcheck.md`.
 - 2026-08-26: Phase 2 complete. Stabilizing lease claim, short URLs, and pack/zip checks.
 - 2026-08-26: `ensure-lease.mjs` retries claim without `--or-next`. `site:dev` exits with a human line if `filepress` is missing. Short URLs are FilePress path mounts plus `_redirects`.
-- 2026-08-26: Second aiBreze pass. Cut leftover mic-drops and the README invent-line stacked next to the name.
+- 2026-08-26: Second Smell Check pass. Cut leftover mic-drops and the README invent-line stacked next to the name.
 - 2026-08-26: Detangler on `site/docs` (install + skill). Skill no longer restates install. Report: `site/docs.detangler/report.md`.

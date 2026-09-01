@@ -8,7 +8,7 @@ A cold eye is the first reader who was not in the room. No credit for intent. Th
 
 The subject is anything that has shipped, is deemed done, or is ready to ship. A skill, a spec, a page, a package, a site, a repo. The list is examples. The gate is the claim.
 
-[Detangler](https://detangler.dev) combs what editing tangled in a draft. [aiBreze](https://aibreze.com) sprays AI smells off prose. Cold-eye is the next bottle on the shelf.
+[Detangler](https://detangler.dev) combs what editing tangled in a draft. [Smell Check](https://smellcheck.dev) sprays AI smells off prose. Cold-eye is the next bottle on the shelf.
 
 ## Names
 

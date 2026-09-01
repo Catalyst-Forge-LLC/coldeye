@@ -6,7 +6,7 @@ title: Introduction
 
 You were in the room. The file looks finished. Locally coherent files can still fail as one product.
 
-npm **`coldeye`**. Site **coldeye.dev**. Sibling of [Detangler](https://detangler.dev) and [aiBreze](https://aibreze.com).
+npm **`coldeye`**. Site **coldeye.dev**. Sibling of [Detangler](https://detangler.dev) and [Smell Check](https://smellcheck.dev).
 
 ## Scope
 

@@ -2,7 +2,7 @@
   "project": {
     "name": "Cold-eye",
     "created": "2026-08-26",
-    "description": "Hostile first-reader pass on anything shipped, deemed done, or ready to ship. The skill writes the critique. npm coldeye, site coldeye.dev. Same shelf as Detangler and aiBreze.",
+    "description": "Hostile first-reader pass on anything shipped, deemed done, or ready to ship. The skill writes the critique. npm coldeye, site coldeye.dev. Same shelf as Detangler and Smell Check.",
     "archetype": "product",
     "status": "active"
   },

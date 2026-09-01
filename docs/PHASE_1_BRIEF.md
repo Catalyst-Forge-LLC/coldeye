@@ -13,7 +13,7 @@ Cold-eye is a hostile first-reader pass on anything that has shipped, is deemed 
 
 The **skill** is the product. An agent reads it and writes the critique. npm `coldeye` ships the folder. There is no command-line pass. There is no apply skill.
 
-Family: [aiBreze](https://aibreze.com) sprays smell off prose. [Detangler](https://detangler.dev) combs what editing tangled in a draft. Cold-eye is the next bottle. Same register, different job. Same shape: a skill an agent reads, not a command that calls a model.
+Family: [Smell Check](https://smellcheck.dev) sprays smell off prose. [Detangler](https://detangler.dev) combs what editing tangled in a draft. Cold-eye is the next bottle. Same register, different job. Same shape: a skill an agent reads, not a command that calls a model.
 
 **Archetype:** `product`
 
@@ -106,7 +106,7 @@ No payments, email, analytics, or search API.
 
 ## 7. Decisions
 
-**D1.** npm `coldeye` + FilePress site + one agent skill. Same shelf as Detangler and aiBreze.
+**D1.** npm `coldeye` + FilePress site + one agent skill. Same shelf as Detangler and Smell Check.
 
 **D2.** The skill writes the critique. No apply skill. Rewrite only if they asked.
 
@@ -118,7 +118,7 @@ No payments, email, analytics, or search API.
 
 **D6.** One finding shape. Quote or absence. No put → drop it.
 
-**D7.** Site modeled on Detangler / aiBreze FilePress. Pages and docs speak as the product.
+**D7.** Site modeled on Detangler / Smell Check FilePress. Pages and docs speak as the product.
 
 **D8.** Unfinished-plan / attack-planning is out. Refuse it. Do not ship a second hour for it.
 
