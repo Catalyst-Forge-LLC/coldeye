@@ -15,7 +15,7 @@ No folder yet? [Install](/docs/install).
 1. Locate the subject. If none, ask.
 2. Read as a first reader. Nothing from the thread that produced the files.
 3. Run the ten tests, in order.
-4. Write the critique. Hand it over. Stop. Do not rewrite unless they asked.
+4. Write the critique. Hand it over. Stop. Do not rewrite unless you asked.
 
 ## Example prompts
 

@@ -30,18 +30,16 @@ Nothing in the subject changes. The critique is a to-do list you take to a rewri
 
 Ten tests, in order. Rank by what a stranger hits first.
 
-- **Pitch or procedure?** Stages are not an hour.
-- **What still has to be invented?** Schema, filenames, write-back, done-looks-like.
-- **Does it match the system?** File against file. What ships against what the page says.
-- **Invisible steps.** A claimed check whose command is missing.
-- **Thin references.** Definitions with no worked example and no do-not-emit.
-- **Sibling mix.** Discovery copy that would fire on another job.
-- **Copied law.** The same rules restated until they drift.
-- **Maintainer notes** on a buyer page.
-- **Papered bugs.** The procedure says write X; the tool destroys X.
-- **No close.** The hour never ends.
-
-## Not a line editor
+- Stages and principles with no start, read, write, stop.
+- Schema, filenames, write-back, or what done looks like, if the hour never binds them.
+- File against file. What ships against what the page says.
+- A claimed check whose command is missing.
+- A definition with no worked example and no do-not-emit.
+- Discovery copy that would fire on another job.
+- The same rules restated until they drift.
+- Maintainer notes on a buyer page.
+- The procedure says write X; the tool destroys X.
+- The hour never ends.
 
 Leave the sentences. Cheerleading and unfinished plans are a different hour.
 

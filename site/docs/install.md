@@ -2,7 +2,7 @@
 title: Install
 ---
 
-The [skill](/docs/skill) is the product. One folder. There is no apply pass and no command line.
+The [skill](/docs/skill) is the product. One folder. The critique is agent behavior, not a command you run.
 
 ## Drop the folder in
 
@@ -41,5 +41,5 @@ Prompts are on [Skill](/docs/skill). The file shape is on [Critique](/docs/criti
 | Subject | File |
 | --- | --- |
 | One file | `<name>.cold-eye.md` next to it |
-| A system | `cold-eye.md` at the root they named |
+| A system | `cold-eye.md` at the root you named |
 | Chat only | Same shape, in the thread |

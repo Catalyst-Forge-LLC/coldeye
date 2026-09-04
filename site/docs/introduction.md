@@ -19,7 +19,7 @@ The skill writes `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a syst
 | Verdict | Means |
 | --- | --- |
 | **holds** | A cold reader can run the job |
-| **close** | A few puts would close the gap |
+| **close** | A few edits to the file would close the gap |
 | **fails a hostile read** | Too much still has to be invented |
 
 It does not rewrite the subject unless you asked.
