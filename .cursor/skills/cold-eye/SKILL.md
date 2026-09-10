@@ -22,8 +22,9 @@ description: >-
   a page, a README. Not only operator files.
 - **System** — more than one surface. A repo, a package, a
   site.
-- **Hour** — the job the subject tells someone to run: start,
-  read, write, stop.
+- **Hour** — the procedure the subject tells someone to run:
+  start, read, write, stop. Public pages say procedure or job
+  for the same thing.
 - **Law** — standing rules one file owns. Copies drift.
 - **Lockup** — the product name plus the one line under it,
   read as if that were the whole page.
@@ -36,11 +37,11 @@ test is what a cold agent or a picky editor still has to invent
 after reading the file. When the subject is a system, whether the
 files describe one product.
 
-This hour is for something that has shipped, is deemed done, or
+This procedure is for something that has shipped, is deemed done, or
 is ready to ship. A direction you might still change is out of
 scope.
 
-## The hour
+## The procedure
 
 1. Locate the subject (a card, a system, or what they pasted).
    If none, ask.
@@ -93,13 +94,13 @@ A lie the first reader hits costs more than a lie in the spec.
 
 Ask, in order:
 
-1. **Pitch or procedure?** Stages and principles are not an
-   hour. Can the reader run the job as steps: start, read,
+1. **Pitch or procedure?** Stages and principles are not a
+   procedure. Can the reader run the job as steps: start, read,
    write, stop?
 2. **What still has to be invented?** Schema, file names,
    write-back, done-looks-like, refuse list. If the reader must
    guess, it fails. A placeholder (`<stem>`, `draft.md`) the
-   hour never binds is a guess.
+   procedure never binds is a guess.
 3. **Does it match the system it describes?** Flags, commands,
    and "the model will…" claims against what the code or tools
    actually do. Then file against file. Two locally coherent
@@ -121,8 +122,8 @@ Ask, in order:
    WHAT + WHEN + refuse. Third person. No "you can use this."
    Refuse the sibling job in the description; put the sibling's
    **name** in the body. Same test on an install page: two hours
-   in one box. If the package ships two folders, say which hour
-   is first.
+   in one box. If the package ships two folders, say which
+   procedure is first.
 7. **Where is the law copied?** Two files that restate the same
    rules will drift. One standing file. Artifacts may list this
    run and point at it. A standing file the main card never
@@ -134,11 +135,11 @@ Ask, in order:
 8. **Is this sentence only for the maintainer?** Ports, leases,
    who publishes, "agents must not." Fine in an agent rule. A
    fail on the page a buyer reads first.
-9. **Does the hour paper over a tool bug?** If the procedure
-   says write X and the named tool destroys X, name both. Do
-   not only rewrite the prose.
-10. **How does the hour end?** Re-check, handoff, or stop. A
-    pass that never closes will start the next pass in the
+9. **Does the procedure paper over a tool bug?** If the
+   procedure says write X and the named tool destroys X, name
+   both. Do not only rewrite the prose.
+10. **How does the procedure end?** Re-check, handoff, or stop.
+    A pass that never closes will start the next pass in the
     same breath.
 
 Protect what already holds. Do not flatten dialect or

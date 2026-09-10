@@ -17,12 +17,14 @@ No folder yet? [Install](/docs/install).
 3. Run the ten tests, in order.
 4. Write the critique. Hand it over. Stop. Do not rewrite unless you asked.
 
+The skill file calls that procedure the **hour**: start, read, write, stop. Public pages use procedure or job.
+
 ## Example prompts
 
-- Hostile read of this skill.
-- Would this survive a picky editor?
+- Would a newcomer know how to use this?
+- Readiness pass on this skill.
 - Cold-eye this repo.
-- What does a cold agent still have to invent?
+- What does a first reader still have to invent?
 - Extreme scrutiny. It claims to be done.
 
-It runs on what claims to be done. A plan still on the table is a different hour.
+It runs on what claims to be done. A plan still on the table is a different review.
