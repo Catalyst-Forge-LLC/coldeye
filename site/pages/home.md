@@ -1,18 +1,28 @@
 ---
 title: Check whether a newcomer can use what you shipped.
-description: Check whether a newcomer can understand and use what you are about to ship. Cold-eye returns a readiness verdict and a ranked list of missing instructions, contradictions, and unsupported claims.
+description: An installable skill for AI agents. Check whether a newcomer can understand and use what you are about to ship.
 order: 0
 ---
 
-Check whether a newcomer can understand and use what you are about to ship. Give Cold-eye a finished artifact: a skill, a spec, a site, a package, or a repo. An agent reads the skill and writes a critique. Verdict first, then a ranked list of missing instructions, contradictions, and unsupported claims.
+An installable skill for AI agents. Cold-eye checks whether a newcomer can understand and use what you are about to ship. Give it a finished artifact: a skill, a spec, a site, a package, or a repo.
 
-The subject does not change. Hostile is the stance after you know the job: no credit for intent.
+An agent reads the skill and writes a critique. Verdict first, then a ranked list of missing instructions, contradictions, and unsupported claims. The subject does not change. Hostile is the stance after you know the job: no credit for intent.
 
-[Docs](/docs/) · [Install](/docs/install) · [Skill](/docs/skill) · [Why the name](/about)
+## One example
 
-## What you get
+A procedure never says when the job is finished.
 
-The skill writes `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a system root.
+The critique verdict is **fails a hostile read**. The first finding is the missing stop. The file itself is unchanged.
+
+[Install in your agent](/docs/install) · [See a failed excerpt](#failed-verdict-illustrative) · [See a clean excerpt](#clean-verdict-illustrative)
+
+## What it reads, writes, and changes
+
+| | |
+| --- | --- |
+| Reads | A finished skill, spec, page, package, site, or repo |
+| Writes | `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a system root |
+| Changes | Nothing, unless you separately ask for an edit |
 
 | Verdict | Means |
 | --- | --- |
@@ -79,15 +89,5 @@ Ten questions, in order. Rank by what a newcomer hits first.
 Leave sentence polish. Cheerleading and unfinished plans are a different review.
 
 Cold-eye is a readiness pass. It is not a code audit, a security audit, or a test run, unless those actions are the subject's own claimed checks. [Detangler](https://detangler.dev) finds structural tangles after edits. [Smell Check](https://smellcheck.dev) reviews prose register. [Misemphasis](https://misemphasis.com) reviews likely readings. A failed contract is not a preference about wording or layout.
-
-## Install
-
-The [skill](/docs/skill) is a folder. [Download cold-eye.zip](/skills/cold-eye.zip), put it in `.cursor/skills/cold-eye/` (or upload the zip on claude.ai), and ask for a readiness read of what you shipped.
-
-```bash
-pnpm add -D coldeye
-```
-
-Then copy the `cold-eye` folder out of `node_modules`.
 
 Built by [Catalyst Forge LLC](https://www.catalystforge.com). MIT.

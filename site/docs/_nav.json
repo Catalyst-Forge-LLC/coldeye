@@ -3,16 +3,18 @@
 		{
 			"title": "Getting started",
 			"items": [
-				{ "id": "introduction", "title": "Introduction" },
-				{ "id": "install", "title": "Install" },
-				{ "id": "skill", "title": "Skill" }
+				{ "id": "install", "title": "Get started" }
 			]
 		},
 		{
 			"title": "Reference",
 			"items": [
+				{ "id": "introduction", "title": "What it does" },
 				{ "id": "critique", "title": "Critique" }
 			]
 		}
+	],
+	"aliases": [
+		{ "id": "skill", "title": "Skill" }
 	]
 }

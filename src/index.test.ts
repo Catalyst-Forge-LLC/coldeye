@@ -41,11 +41,17 @@ test("package ships skills and has no bin", () => {
 test("docs nav has a markdown file for every item", () => {
 	const nav = JSON.parse(
 		readFileSync(join(packageRoot, "site", "docs", "_nav.json"), "utf8"),
-	) as { sections: Array<{ items: Array<{ id: string }> }> };
+	) as {
+		sections: Array<{ items: Array<{ id: string }> }>;
+		aliases?: Array<{ id: string }>;
+	};
 	for (const section of nav.sections) {
 		for (const item of section.items) {
 			assert.ok(existsSync(join(packageRoot, "site", "docs", `${item.id}.md`)), item.id);
 		}
+	}
+	for (const item of nav.aliases ?? []) {
+		assert.ok(existsSync(join(packageRoot, "site", "docs", `${item.id}.md`)), item.id);
 	}
 	execFileSync("node", [join(packageRoot, "site", "scripts", "build-docs.mjs")], {
 		cwd: join(packageRoot, "site"),
