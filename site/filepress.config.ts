@@ -23,6 +23,7 @@ export default defineFilepressConfig({
 	],
 	footerLinks: [
 		{ label: "Get started", href: "/docs/install" },
+		{ label: "Posts", href: "/posts" },
 		{ label: "npm", href: npm },
 		{ label: "GitHub", href: github, icon: "github" },
 	],
