@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Claim/read the LocalSlip lease, then start FilePress on that port.
+ * Sync skill zips and docs, then start FilePress.
+ * Port comes from LocalSlip (`coldeye-site`). Claim in site/package.json.
  */
 import { spawn, spawnSync } from "node:child_process";
 import { watch } from "node:fs";
@@ -38,15 +39,7 @@ watch(join(site, "theme.css"), () => {
 	}, 200);
 });
 
-const lease = spawnSync(node, [join(root, "scripts/ensure-lease.mjs"), "coldeye-site", "5204"], {
-	encoding: "utf8",
-	windowsHide: true,
-});
-const port = String(lease.stdout || "").trim() || "5204";
-if (lease.stderr) process.stderr.write(lease.stderr);
-console.log(`coldeye-site: http://127.0.0.1:${port}`);
-
-const child = spawn("filepress", ["dev", "--host", "0.0.0.0", "--port", port], {
+const child = spawn("filepress", ["dev", "--host", "0.0.0.0"], {
 	cwd: site,
 	stdio: "inherit",
 	shell: process.platform === "win32",

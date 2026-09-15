@@ -88,14 +88,9 @@ test("sync writes a zip the install page can download", () => {
 	assert.ok(existsSync(join(packageRoot, "site", "static", "skills", "cold-eye.zip")));
 });
 
-test("ensure-lease prints a port and does not crash", () => {
-	const out = execFileSync(
-		"node",
-		[join(packageRoot, "scripts", "ensure-lease.mjs"), "coldeye-site", "5204"],
-		{ encoding: "utf8" },
-	);
-	const port = String(out).trim().split(/\r?\n/).at(-1) ?? "";
-	assert.match(port, /^\d+$/);
+test("site dev claims the LocalSlip lease by name", () => {
+	const sitePkg = readFileSync(join(packageRoot, "site", "package.json"), "utf8");
+	assert.match(sitePkg, /localslip claim coldeye-site --port 5204/);
 });
 
 test("package tarball lists the skill folder", () => {
