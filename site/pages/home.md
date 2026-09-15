@@ -10,9 +10,9 @@ An agent reads the skill and writes a critique. Verdict first, then a ranked lis
 
 ## One example
 
-A procedure never says when the job is finished.
+A procedure says to repeat a review “until ready” and never defines readiness.
 
-The critique verdict is **fails a hostile read**. The first finding is the missing stop. The file itself is unchanged.
+The critique can point at that unresolved condition. The file itself is unchanged. A clean control that names the readiness criterion should not keep that finding. Do not treat one predetermined failing verdict as proof the skill loaded.
 
 [Install in your agent](/docs/install) · [See a failed excerpt](#failed-verdict-illustrative) · [See a clean excerpt](#clean-verdict-illustrative)
 
@@ -54,22 +54,22 @@ No invented faults. The file already tells a newcomer how to start, what to read
 
 ## Failed verdict (illustrative)
 
-Labeled example. The procedure never says the job is finished.
+Labeled example. The procedure repeats “until ready” with no readiness criterion.
 
 ```markdown
-# Cold-eye: procedure with no stop
+# Cold-eye: review until ready
 
 **Verdict:** fails a hostile read
 
 ## Ranked changes
 
 1. **F-001** · test 10 · no_close
-   Absent: the procedure, when to stop
-   Cold reader: starts a second pass in the same breath.
-   Put: End with hand the file over and stop. Do not begin the next pass here.
+   Absent: the procedure, what “ready” means
+   Cold reader: keeps repeating with no exit.
+   Put: Name the readiness criterion, then hand the file over and stop.
 ```
 
-The finding cites a missing stopping condition. The smallest repair is to name that stop.
+The finding cites the unresolved repeat condition. A repaired fixture that defines readiness should no longer receive that finding. Reasonable reviewers may also note missing binding of `notes.md`; that is still evidence-based, not a required second invention.
 
 ## What it checks
 

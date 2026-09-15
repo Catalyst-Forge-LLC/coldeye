@@ -24,14 +24,30 @@ example — [coldeye.dev/docs/install](https://coldeye.dev/docs/install).
 
 ## First run
 
-Save a checklist that never says when to stop, then ask:
+Save [until-ready.md](https://coldeye.dev/samples/until-ready.md) (or the
+checklist below), then ask:
 
-> Use Cold-eye on `no-stop.md`. Follow the installed Cold-eye skill.
-> Write the critique.
+> Use Cold-eye on `until-ready.md`. Follow the installed Cold-eye skill.
+> Write the critique. Leave the checklist unchanged.
 
-The critique lands in `no-stop.cold-eye.md`. The checklist should be
-unchanged. The verdict should fail a hostile read for the missing
-stop.
+```markdown
+# Review until ready
+
+Fictional procedure for desk-stamp notes. Labeled example.
+
+1. Open `notes.md`.
+2. Read every section.
+3. Write findings next to the file as `notes.review.md`.
+4. Repeat the review until ready.
+```
+
+The critique lands in `until-ready.cold-eye.md`. The checklist should be
+unchanged. A finding should be able to point at the unresolved “until
+ready” condition. Do not treat one exact failing verdict as proof of
+loading.
+
+A writable workspace is required. Package `coldeye`, skill folder
+`cold-eye`.
 
 ## Other installation methods
 

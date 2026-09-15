@@ -2,15 +2,25 @@
 title: Get started
 ---
 
-Install the skill in your agent, then use it. You do not need Node or npm for this path.
+Install the skill in your agent, then use it. You do not need Node or npm for this path. Package name on npm: `coldeye`. Installed skill folder: `cold-eye`.
+
+Cold-eye writes a critique file. A writable workspace is required. Claude.ai without project files is not a supported first-use route.
+
+## Supported hosts
+
+| Host | Scope | Required | Notes |
+| --- | --- | --- | --- |
+| Cursor | Project skills folder | Writable workspace | Host listing / discovery not independently verified in this docs pass |
+| Claude Code | Project or `~/.claude/skills/` | Writable workspace | Same |
+| Other agents that read `SKILL.md` | Manual copy | Writable workspace | Unverified |
+| Claude.ai | — | Writable project files | Not a supported first-use route without files |
+
+A folder on disk is not proof the agent loaded the skill. Prefer the host’s skill list or a visible file-read of `SKILL.md`. A critique alone does not prove loading.
 
 ## Which agent do you use?
 
 - [Cursor](#cursor)
 - [Claude Code](#claude-code)
-- [Claude.ai](#claudeai)
-
-A folder on disk is not proof the agent found the skill. The first run below is the check.
 
 ## Cursor
 
@@ -30,33 +40,42 @@ Put that folder in the project you are reviewing:
 
 ### Confirm it
 
-Ask Cursor to use Cold-eye on the sample below. If it writes a critique, it found the skill and the reference files.
+If Cursor lists installed skills, confirm `cold-eye`. Otherwise ask it to open `SKILL.md` from that folder and quote the first heading.
 
 ### Try it
 
-Save this checklist as `no-stop.md` in the project:
+Save this checklist as `until-ready.md` in the project, or [download it](/samples/until-ready.md):
 
 ```markdown
-# Ship checklist
+# Review until ready
 
-1. Open the file.
-2. Read the steps.
-3. Write the output next to the file.
+Fictional procedure for desk-stamp notes. Labeled example.
+
+1. Open `notes.md`.
+2. Read every section.
+3. Write findings next to the file as `notes.review.md`.
+4. Repeat the review until ready.
 ```
 
 Then ask:
 
-> Use Cold-eye on `no-stop.md`. Follow the installed Cold-eye skill. Write the critique.
+> Use Cold-eye on `until-ready.md`. Follow the installed Cold-eye skill. Write the critique. Leave the checklist unchanged.
+
+A repaired control that defines readiness is [until-ready-fixed.md](/samples/until-ready-fixed.md). You do not need it for the first run.
 
 ### Find the result
 
-The critique lands in `no-stop.cold-eye.md` next to the file.
+The critique lands in `until-ready.cold-eye.md` next to the file.
 
 Success looks like this shape, not identical wording from every model:
 
 - A verdict (`holds`, `close`, or `fails a hostile read`)
-- A ranked finding that the procedure never says when to stop
+- A finding that points at the unresolved “until ready” condition (step 4)
 - The checklist itself left unchanged
+
+Do not require one exact verdict wording. Reasonable variation is allowed when the evidence permits it. That the example behaved is not the same check as discovery.
+
+A page-only or URL-only subject covers only what the host can inspect. Missing repository or runtime access limits conclusions.
 
 ## Claude Code
 
@@ -74,45 +93,40 @@ Unzip, then put the folder in the repo you are reviewing:
 
 ### Confirm it
 
-Same check as Cursor: the first run must produce a critique file.
+If Claude Code lists skills, confirm `cold-eye`. Otherwise ask it to open `SKILL.md` from that folder and quote the first heading.
 
 ### Try it
 
-Same request as [Cursor](#try-it).
+Save this checklist as `until-ready.md` in the repo, or [download it](/samples/until-ready.md):
+
+```markdown
+# Review until ready
+
+Fictional procedure for desk-stamp notes. Labeled example.
+
+1. Open `notes.md`.
+2. Read every section.
+3. Write findings next to the file as `notes.review.md`.
+4. Repeat the review until ready.
+```
+
+Then ask:
+
+> Use Cold-eye on `until-ready.md`. Follow the installed Cold-eye skill. Write the critique. Leave the checklist unchanged.
 
 ### Find the result
 
-Same path as [Cursor](#find-the-result).
-
-## Claude.ai
-
-### Get it
-
-Download [cold-eye.zip](/skills/cold-eye.zip).
-
-### Add it
-
-Do not unzip. Open Settings → Customize → Skills and upload the zip.
-
-### Confirm it
-
-Start a chat and run the request below. If the agent writes a Cold-eye critique, it loaded the skill.
-
-### Try it
-
-Paste the checklist from [Cursor](#try-it), then ask:
-
-> Use Cold-eye on this checklist. Follow the installed Cold-eye skill. Write the critique.
-
-### Find the result
-
-The critique appears in the chat. When the agent can write files, it lands in `no-stop.cold-eye.md`.
+Open `until-ready.cold-eye.md`. Look for a verdict and a finding about the unresolved readiness condition. The checklist should be unchanged.
 
 ## After the review
 
 There is no apply skill. Read the ranked findings. Edit the subject yourself, or ask your agent to make a named repair outside this skill.
 
 The subject does not change unless you ask for that edit.
+
+### Update or remove
+
+Replace the installed `cold-eye` folder to update. Delete that folder to uninstall. Copied skills do not refresh when you bump the npm package `coldeye`.
 
 ## Other ways to ask
 
@@ -123,6 +137,8 @@ Once the first run works:
 - Hostile read. Would this survive a picky editor?
 
 Those are later shortcuts. They are not the install check.
+
+Cold-eye tests whether a newcomer can understand and use the subject, with a repair-oriented verdict. [CraftAssay](https://craftassay.dev) provides a broader dimensional assessment and repeatable comparison.
 
 ## Other installation methods
 
@@ -136,7 +152,7 @@ Copy `node_modules/coldeye/skills/cold-eye/` into the same destination you would
 
 Updating the npm dependency does not refresh a folder you already copied. Copy again after you bump the package.
 
-Node.js 20+. The package is [`coldeye`](https://www.npmjs.com/package/coldeye) on npm.
+Node.js 20+. The package is [`coldeye`](https://www.npmjs.com/package/coldeye) on npm. The skill folder name stays `cold-eye`.
 
 Or clone the [repo](https://github.com/Catalyst-Forge-LLC/coldeye) and copy `skills/cold-eye/`.
 
@@ -145,6 +161,6 @@ Or clone the [repo](https://github.com/Catalyst-Forge-LLC/coldeye) and copy `ski
 - Cursor: `~/.cursor/skills/cold-eye/`
 - Claude Code: `~/.claude/skills/cold-eye/`
 
-Same folder shape. The first-run check is the same.
+Same folder shape. Discovery and first-use checks are the same.
 
 The critique shape is on [Critique](/docs/critique).
