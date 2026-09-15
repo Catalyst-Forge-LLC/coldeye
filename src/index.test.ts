@@ -91,7 +91,7 @@ test("sync writes a zip the install page can download", () => {
 test("ensure-lease prints a port and does not crash", () => {
 	const out = execFileSync(
 		"node",
-		[join(packageRoot, "scripts", "ensure-lease.mjs"), "coldeye-site", "5200"],
+		[join(packageRoot, "scripts", "ensure-lease.mjs"), "coldeye-site", "5204"],
 		{ encoding: "utf8" },
 	);
 	const port = String(out).trim().split(/\r?\n/).at(-1) ?? "";

@@ -14,7 +14,7 @@ _Flat list until Phase 6. Seeded from PHASE_1_BRIEF first feature batch._
 ## Next
 
 - [ ] Public sample critique on the homepage from a real shipped subject
-- [x] Confirm FilePress preview on the leased port (5200)
+- [x] Confirm FilePress preview on the leased port (5204)
 - [ ] Paste-dumb install path (later; do not block v1)
 
 ## Foundation

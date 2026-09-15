@@ -147,7 +147,7 @@ No payments, email, analytics, or search API.
 | # | Question | Owner / resolve by |
 | - | -------- | ------------------ |
 | 1 | Fixture set in GENESIS §7 — keep as the starting list? | Lock with this brief |
-| 2 | LocalBerth lease `coldeye-site` on **5200** | Decided Phase 2 |
+| 2 | LocalSlip lease `coldeye-site` on **5204** | Decided Phase 2 |
 | 3 | Paste-dumb install in v1, or later? | Deferred (GENESIS §11) |
 
 ---

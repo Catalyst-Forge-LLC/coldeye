@@ -17,7 +17,7 @@ Hero flow: load the skill → agent writes `<name>.cold-eye.md` or `cold-eye.md`
 ## Tech Stack
 
 - **Package:** TypeScript ESM catalog + one skill folder. Node ≥20. pnpm. No `bin`.
-- **Site:** FilePress (`getfilepress`) + Cloudflare Pages (`pnpm ship`, project `coldeye`). LocalBerth lease `coldeye-site` on **5200**. `pnpm site:dev` claims the lease and passes `--port` to FilePress.
+- **Site:** FilePress (`getfilepress`) + Cloudflare Pages (`pnpm ship`, project `coldeye`). LocalSlip lease `coldeye-site` on **5204**. `pnpm site:dev` claims the lease and passes `--port` to FilePress.
 - **DB / auth:** none. Local files only.
 - **AI/LLM:** The agent reading the skill is the judgment. No provider path.
 - **Tests:** `tsc` + `node --test` on the skill catalog. Sample subjects in `fixtures/`.
@@ -48,7 +48,7 @@ The deliverable is `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a na
 - **GitHub Catalyst-Forge-LLC/coldeye.** WHY: user named the repo. DECIDED: Phase 1
 - **Subject is anything shipped, deemed done, or ready to ship.** WHY: user widened the gate; file types are examples. DECIDED: Phase 1
 - **No unfinished-plan hour.** WHY: that hour lives elsewhere; keep Cold-eye clean. DECIDED: Phase 1
-- **LocalBerth coldeye-site on 5200.** WHY: 5199 is detangler-site. DECIDED: Phase 2
+- **LocalSlip coldeye-site on 5204.** WHY: 5203 is detangler-site; 5200 is gaplast-site. DECIDED: Phase 2
 
 ## Critical Patterns
 
@@ -56,7 +56,7 @@ The deliverable is `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a na
 - Quote a line or name an absence. No put → drop the finding.
 - Agents never `pnpm publish`. Site deploy is `pnpm ship` only (one pipeline).
 - Site copy speaks as the product. No corporate we. No builder I. Overlay: `docs/smellcheck.md`.
-- LocalBerth: claim a named lease, then pass that port to FilePress. Do not assume 5182 or 5199. On Windows, `claim --or-next` can fail; `ensure-lease.mjs` retries without it and still prints a port.
+- LocalSlip: claim a named lease, then pass that port to FilePress. Do not assume 5182 or 5203. `--notes` must not contain spaces on Windows `shell:true`.
 - Short `/install`, `/skill`, and `/critique` URLs: FilePress `paths` mounts `site/static/<slug>` so local `filepress dev` serves the stub. Pages also has `_redirects`. A file under `static/<slug>/index.html` alone 404s — SvelteKit owns `/<slug>` first. Canonical path is `/docs/install` (and the same for skill and critique).
 - The skill writes the critique. It does not rewrite unless they asked.
 - One standing file for the critique shape. The skill points. It does not restate.

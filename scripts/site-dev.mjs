@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Claim/read the LocalBerth lease, then start FilePress on that port.
+ * Claim/read the LocalSlip lease, then start FilePress on that port.
  */
 import { spawn, spawnSync } from "node:child_process";
 import { watch } from "node:fs";
@@ -38,11 +38,11 @@ watch(join(site, "theme.css"), () => {
 	}, 200);
 });
 
-const lease = spawnSync(node, [join(root, "scripts/ensure-lease.mjs"), "coldeye-site", "5200"], {
+const lease = spawnSync(node, [join(root, "scripts/ensure-lease.mjs"), "coldeye-site", "5204"], {
 	encoding: "utf8",
 	windowsHide: true,
 });
-const port = String(lease.stdout || "").trim() || "5200";
+const port = String(lease.stdout || "").trim() || "5204";
 if (lease.stderr) process.stderr.write(lease.stderr);
 console.log(`coldeye-site: http://127.0.0.1:${port}`);
 
