@@ -13,14 +13,36 @@ Cold-eye is a readiness pass on anything shipped, deemed done, or
 ready to ship. An agent reads the skill and writes a critique.
 Verdict first, then a ranked list. The subject does not change.
 
-**Get started:** pick the agent, install the skill, then run a named
-example — [coldeye.dev/docs/install](https://coldeye.dev/docs/install).
+**Get started:** pick the agent, install the skill, then run the
+sample checklist at
+[coldeye.dev/docs/install](https://coldeye.dev/docs/install).
 
 - [Cursor](https://coldeye.dev/docs/install#cursor)
 - [Claude Code](https://coldeye.dev/docs/install#claude-code)
 - [Claude.ai](https://coldeye.dev/docs/install#claudeai)
 
 **Site:** [coldeye.dev](https://coldeye.dev)
+
+## One example (illustrative)
+
+You wrote: “Install the package and launch the app.”
+
+Cold-eye finds: the guide names the package but never gives the
+launch command. A new user cannot finish setup from the
+instructions given.
+
+You get a ranked finding in the critique file:
+
+```markdown
+**Verdict:** close
+
+1. **F-001** · test 2 · invented
+   > Install the package and launch the app.
+   Cold reader: installs the package, then guesses a launch command or stops.
+   Put: The exact launch command on the next line, and what the reader sees when the app is running.
+```
+
+The guide itself is unchanged.
 
 ## First run
 
@@ -42,9 +64,10 @@ Fictional procedure for desk-stamp notes. Labeled example.
 ```
 
 The critique lands in `until-ready.cold-eye.md`. The checklist should be
-unchanged. A finding should be able to point at the unresolved “until
-ready” condition. Do not treat one exact failing verdict as proof of
-loading.
+unchanged. A finding should point at step 4, the unresolved “until
+ready” condition. Wording varies by model. A critique alone does not
+prove the skill loaded: check the agent's skill list, or ask it to
+quote the first heading of `SKILL.md`.
 
 A writable workspace is required. Package `coldeye`, skill folder
 `cold-eye`.

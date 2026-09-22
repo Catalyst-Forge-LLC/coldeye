@@ -4,24 +4,41 @@ description: An installable skill for AI agents. Check whether a newcomer can un
 order: 0
 ---
 
-An installable skill for AI agents. Cold-eye checks whether a newcomer can understand and use what you are about to ship. Give it a finished artifact: a skill, a spec, a site, a package, or a repo.
+An installable skill for AI agents. Cold-eye checks whether a newcomer can understand and use what you are about to ship. Give it a finished artifact: a guide, a README, a skill, a spec, a site, a package, or a repo.
 
-An agent reads the skill and writes a critique. Verdict first, then a ranked list of missing instructions, contradictions, and unsupported claims. The subject does not change. Hostile is the stance after you know the job: no credit for intent.
+Your agent follows the skill and writes a critique file. Verdict first, then a ranked list of missing instructions, contradictions, and unsupported claims. The subject does not change. Hostile is the stance after you know the job: no credit for intent.
 
-## One example
+## One example (illustrative)
 
-A procedure says to repeat a review “until ready” and never defines readiness.
+You wrote: “Install the package and launch the app.”
 
-The critique can point at that unresolved condition. The file itself is unchanged. A clean control that names the readiness criterion should not keep that finding. Do not treat one predetermined failing verdict as proof the skill loaded.
+Cold-eye finds: the guide names the package but never gives the launch command. A new user cannot finish setup from the instructions given.
 
-[Install in your agent](/docs/install) · [See a failed excerpt](#failed-verdict-illustrative) · [See a clean excerpt](#clean-verdict-illustrative)
+You get: a ranked finding that quotes the line, says what a newcomer does instead, and says what to add.
+
+```markdown
+# Cold-eye: setup guide
+
+**Verdict:** close
+
+## Ranked changes
+
+1. **F-001** · test 2 · invented
+   > Install the package and launch the app.
+   Cold reader: installs the package, then guesses a launch command or stops.
+   Put: The exact launch command on the next line, and what the reader sees when the app is running.
+```
+
+One missing command is a small edit, so the verdict is **close**. The guide itself is unchanged.
+
+[Install in your agent](/docs/install) · [See a clean excerpt](#clean-verdict-illustrative) · [See the first-run sample](#the-first-run-sample)
 
 ## What it reads, writes, and changes
 
 | | |
 | --- | --- |
 | Reads | A finished skill, spec, page, package, site, or repo |
-| Writes | `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a system root |
+| Writes | `<name>.cold-eye.md` next to a file, or `cold-eye.md` at a system root. Chat only, if you ask |
 | Changes | Nothing, unless you separately ask for an edit |
 
 | Verdict | Means |
@@ -30,7 +47,7 @@ The critique can point at that unresolved condition. The file itself is unchange
 | **close** | Almost. A few edits to the file would close the gap |
 | **fails a hostile read** | The reader still has to invent too much |
 
-A repo, a package, or a site may get a split verdict: the card as a card, the files as a system.
+A repo, a package, or a site may get a split verdict: one for the main file read alone, one for all the files read together.
 
 ## Clean verdict (illustrative)
 
@@ -52,9 +69,9 @@ The four steps, and the line that says write `None.` when nothing is missing.
 
 No invented faults. The file already tells a newcomer how to start, what to read, what to write, and when to stop.
 
-## Failed verdict (illustrative)
+## The first-run sample
 
-Labeled example. The procedure repeats “until ready” with no readiness criterion.
+[Get started](/docs/install) has you run Cold-eye on a four-step sample checklist, [until-ready.md](/samples/until-ready.md). Step 4 says to repeat the review “until ready” and never says what ready means. A run should produce something with this shape:
 
 ```markdown
 # Cold-eye: review until ready
@@ -69,7 +86,15 @@ Labeled example. The procedure repeats “until ready” with no readiness crite
    Put: Name the readiness criterion, then hand the file over and stop.
 ```
 
-The finding cites the unresolved repeat condition. A repaired fixture that defines readiness should no longer receive that finding. Reasonable reviewers may also note missing binding of `notes.md`; that is still evidence-based, not a required second invention.
+How to check your result:
+
+- The finding should point at step 4, the unresolved “until ready” condition.
+- The checklist should be unchanged.
+- Wording varies by model. Check the shape, not an exact match. A second finding, such as `notes.md` never being described, is fair if it points at the file.
+- A corrected copy, [until-ready-fixed.md](/samples/until-ready-fixed.md), defines readiness and says when to stop. It should not get the step 4 finding.
+- A failing verdict alone does not prove your agent loaded the skill. Check the agent's skill list, or ask it to quote the first heading of `SKILL.md`.
+
+The repo's [`fixtures/`](https://github.com/Catalyst-Forge-LLC/coldeye/tree/main/fixtures) folder holds more sample subjects. Each has an `expected.md` naming the injected fault and the test that should catch it. The `clean` sample has no fault, so a wording-only finding on it is a miss.
 
 ## What it checks
 

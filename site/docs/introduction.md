@@ -6,7 +6,7 @@ title: What it does
 
 Give it a finished artifact. An agent reads the skill and writes a critique of missing instructions, contradictions, and unsupported claims.
 
-**[Get started](/docs/install)** — install the skill in your agent, then use it.
+**[Get started](/docs/install):** install the skill in your agent, then use it.
 
 You were in the room. The file looks finished. Locally coherent files can still fail as one product.
 

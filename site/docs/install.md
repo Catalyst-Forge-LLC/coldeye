@@ -10,10 +10,10 @@ Cold-eye writes a critique file. A writable workspace is required. Claude.ai wit
 
 | Host | Scope | Required | Notes |
 | --- | --- | --- | --- |
-| Cursor | Project skills folder | Writable workspace | Host listing / discovery not independently verified in this docs pass |
-| Claude Code | Project or `~/.claude/skills/` | Writable workspace | Same |
+| Cursor | Project skills folder | Writable workspace | Confirm the skill appears before the first run |
+| Claude Code | Project or `~/.claude/skills/` | Writable workspace | Confirm the skill appears before the first run |
 | Other agents that read `SKILL.md` | Manual copy | Writable workspace | Unverified |
-| Claude.ai | — | Writable project files | Not a supported first-use route without files |
+| Claude.ai | None | Writable project files | Not a supported first-use route without files |
 
 A folder on disk is not proof the agent loaded the skill. Prefer the host’s skill list or a visible file-read of `SKILL.md`. A critique alone does not prove loading.
 
@@ -61,7 +61,7 @@ Then ask:
 
 > Use Cold-eye on `until-ready.md`. Follow the installed Cold-eye skill. Write the critique. Leave the checklist unchanged.
 
-A repaired control that defines readiness is [until-ready-fixed.md](/samples/until-ready-fixed.md). You do not need it for the first run.
+A corrected copy that defines readiness is [until-ready-fixed.md](/samples/until-ready-fixed.md). You do not need it for the first run.
 
 ### Find the result
 
@@ -73,7 +73,7 @@ Success looks like this shape, not identical wording from every model:
 - A finding that points at the unresolved “until ready” condition (step 4)
 - The checklist itself left unchanged
 
-Do not require one exact verdict wording. Reasonable variation is allowed when the evidence permits it. That the example behaved is not the same check as discovery.
+Do not require one exact verdict wording. Reasonable variation is allowed when the evidence permits it. A good critique does not prove the skill loaded. Use [Confirm it](#confirm-it) for that.
 
 A page-only or URL-only subject covers only what the host can inspect. Missing repository or runtime access limits conclusions.
 
