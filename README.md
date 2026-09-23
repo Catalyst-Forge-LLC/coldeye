@@ -91,3 +91,5 @@ copied. Copy again after you bump the package.
 ## License
 
 MIT. Copyright Catalyst Forge LLC.
+
+[See the rest of the Catalyst Forge shelf.](https://catalystforge.com/tools/)
