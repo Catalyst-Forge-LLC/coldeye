@@ -19,7 +19,8 @@ sample checklist at
 
 - [Cursor](https://coldeye.dev/docs/install#cursor)
 - [Claude Code](https://coldeye.dev/docs/install#claude-code)
-- [Claude.ai](https://coldeye.dev/docs/install#claudeai)
+
+Claude.ai without project files is not a supported first-use route. The install page lists current host limits.
 
 **Site:** [coldeye.dev](https://coldeye.dev)
 
