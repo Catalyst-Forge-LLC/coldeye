@@ -1,5 +1,5 @@
 ---
-title: Whether a newcomer can use what you ship.
+title: Check whether a newcomer can use and understand what you are about to ship.
 description: An installable skill for AI agents. Check whether a newcomer can understand and use what you are about to ship.
 order: 0
 ---
