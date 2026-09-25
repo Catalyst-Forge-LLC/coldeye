@@ -23,7 +23,7 @@ You get: a ranked finding that quotes the line, says what a newcomer does instea
 
 ## Ranked changes
 
-1. **F-001** · test 2 · invented
+1. **F-001** · unsupported detail: this claim has no source in the reviewed artifact (test 2 · invented)
    > Install the package and launch the app.
    Cold reader: installs the package, then guesses a launch command or stops.
    Put: The exact launch command on the next line, and what the reader sees when the app is running.
