@@ -1,5 +1,5 @@
 ---
-title: A hostile read
+title: Whether a newcomer can use what you ship.
 description: An installable skill for AI agents. Check whether a newcomer can understand and use what you are about to ship.
 order: 0
 ---
