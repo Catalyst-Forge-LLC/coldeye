@@ -8,6 +8,7 @@ export default defineFilepressConfig({
 	description:
 		"An installable skill for AI agents. A hostile first-reader pass on anything shipped, deemed done, or ready to ship.",
 	tagline: "A hostile read of what claims to be done.",
+	lede: 'Skill · newcomer · finished artifact',
 	url: "https://coldeye.dev",
 	author: "Catalyst Forge LLC",
 	logo: "/logo.png",

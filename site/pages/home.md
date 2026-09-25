@@ -1,5 +1,5 @@
 ---
-title: Check whether a newcomer can use what you shipped.
+title: A hostile read
 description: An installable skill for AI agents. Check whether a newcomer can understand and use what you are about to ship.
 order: 0
 ---
@@ -7,6 +7,11 @@ order: 0
 An installable skill for AI agents. Cold-eye checks whether a newcomer can understand and use what you are about to ship. Give it a finished artifact: a guide, a README, a skill, a spec, a site, a package, or a repo.
 
 Your agent follows the skill and writes a critique file. Verdict first, then a ranked list of missing instructions, contradictions, and unsupported claims. The subject does not change. Hostile is the stance after you know the job: no credit for intent.
+
+<div class="cta-row">
+  <a class="cta cta-primary" href="/docs/install">Install in your agent</a>
+  <a class="cta cta-secondary" href="https://github.com/Catalyst-Forge-LLC/coldeye">View on GitHub</a>
+</div>
 
 ## One example (illustrative)
 
