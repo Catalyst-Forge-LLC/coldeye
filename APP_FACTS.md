@@ -1,6 +1,6 @@
 ---
 app_facts_version: 0.1.0
-name: coldeye
+name: Cold-eye
 type: library
 status: active
 license: MIT
@@ -33,7 +33,7 @@ credits:
   built_by: "Catalyst Forge — https://www.catalystforge.com/"
 ---
 
-# coldeye
+# Cold-eye
 
 `library` · **active** · MIT
 
@@ -69,4 +69,4 @@ Curated stack label for this repository — aimed at an under-a-minute skim.
 ---
 *Generated with [AppFacts](https://appfacts.dev) · Built by [Catalyst Forge](https://www.catalystforge.com/) · [Visual label][appfacts-label]*
 
-[appfacts-label]: https://appfacts.dev/v#af1.eNpVkcFOAzEMRH8lmnOg4pprEQLUcmlvCCE366aBbBIl3qJV1X9H2aUFblE8M362TzjC3GlE6hkGNoWOR4aGjLl9BL8rVEZoVCEZKgzIij82SfCWY22q9dN2VthPmBMCRTeQa5XtmHlji8-i1TMd6fJebjZaPW7XK2iUIYqf2r-kjm8_KjQOqYqPDgbLkIZuH6i0lh3nkMaeo8Dgq1B0gQvOU6HCvJ4QYSb2OjWCRv5HoS5simKnmlB1vPfRi0-x4qznhGv07P9lUL8ESlIKV4dj2fvAuXCtP677ZIcmpJateork-I_xTaMe7RX635wFBo_zCibQP3M3327woWubzmQ_yfH7HN5cOea-LaRwTtVLKiMMDiK5msXCeTkMu1ub-sWShMJY5eYhFcc3q9VycTn--RuQz7Zh
+[appfacts-label]: https://appfacts.dev/v#af1.eNpVkU9vwyAMxb8K8pk22pVrpqmb2l3a2zRNLriUlQACJ1NU9btPJOuf3RB-7_ln-wwDqCcJATsCBW30ZkEjgQQeU_3xbp8xjyChMHJfQAFqdkOVeKcplKravO5mhT6BOoPHYHu0tbIbE211domleMMBr-92u5VitdusQULuA7up_3s0tPwuIOEYC7tgK5OPvTl4zLWloeTj2FFgUPCTMVhPGS5ToYD6OEMANbGXqRFISP8oxJVNYDCiCoWhgwuOXQwFLnJOuEXP_juDuBMIjtHfHJb44DylTKX8uZ6j7qsQa7boMKClB-OnhDLoG_S_OTMoWM0rmEAf5q6-fe-8qZtOqE9o6WsOr64UUlcXkinF4jjmERQcmVNRTWMdH_v9UseuaZHRj4UXLzFbWqzXbaOjN_X4l1-wJrZu
