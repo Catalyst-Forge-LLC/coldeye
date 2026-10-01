@@ -14,6 +14,25 @@ fallback fired.
 - A system: `**Verdict:** <card> as a card, <system> as a system.`
   `<card>` and `<system>` each take one of the three values above.
 
+**What each verdict means:**
+
+- **holds** — a cold reader can run the job from the files as
+  shipped. Ranked changes may still exist. None of them stops the
+  job or plants a false must-fix.
+- **close** — at least one change stops the job or misleads the
+  first reader, and every such change is an edit to a file that
+  already exists: a missing command, a named output file, a
+  contradiction resolved one way. The author can make them without
+  redesigning the procedure.
+- **fails a hostile read** — a cold reader cannot finish the job,
+  and the fix needs something the subject does not have yet: a
+  procedure where there is only a pitch, a schema nobody wrote, a
+  tool that does not do what the files say.
+
+Pick the verdict from the worst ranked change, not from the count.
+One missing launch command is `close`. Ten wording notes are not
+findings at all.
+
 **Types** (one per test, not freeform):
 
 | Test | Type |
@@ -54,6 +73,12 @@ fallback fired.
 
 - …
 ```
+
+**What to cut** lists lines that mislead or belong on another
+surface: a maintainer note on the brochure, a pitch inside a
+procedure, a status marker that contradicts what shipped. Say where
+the line goes if it belongs elsewhere. Wording you would only
+tighten is not a cut. Write `None.` when nothing qualifies.
 
 The second finding is the absence form. Use it when there is
 no line to quote. Quote the line, or name the location and

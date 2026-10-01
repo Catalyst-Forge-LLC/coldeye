@@ -22,19 +22,19 @@ Cold-eye finds: the guide names the package but never gives the launch command. 
 You get: a ranked finding that quotes the line, says what a newcomer does instead, and says what to add.
 
 ```markdown
-# Cold-eye: setup guide
+# Cold-eye — setup guide
 
 **Verdict:** close
 
 ## Ranked changes
 
-1. **F-001** · unsupported detail: this claim has no source in the reviewed artifact (test 2 · invented)
+1. **F-001** · test 2 — invented
    > Install the package and launch the app.
    Cold reader: installs the package, then guesses a launch command or stops.
    Put: The exact launch command on the next line, and what the reader sees when the app is running.
 ```
 
-One missing command is a small edit, so the verdict is **close**. The guide itself is unchanged.
+Test 2 asks what a newcomer still has to invent. Here it is the launch command. One missing command is a small edit, so the verdict is **close**. The guide itself is unchanged.
 
 [Install in your agent](/docs/install) · [See a clean excerpt](#clean-verdict-illustrative) · [See the first-run sample](#the-first-run-sample)
 
@@ -59,7 +59,7 @@ A repo, a package, or a site may get a split verdict: one for the main file read
 Labeled example. A one-page checklist that names the file, the output path, and when to stop.
 
 ```markdown
-# Cold-eye: clean checklist
+# Cold-eye — clean checklist
 
 **Verdict:** holds
 
@@ -79,13 +79,13 @@ No invented faults. The file already tells a newcomer how to start, what to read
 [Get started](/docs/install) has you run Cold-eye on a four-step sample checklist, [until-ready.md](/samples/until-ready.md). Step 4 says to repeat the review “until ready” and never says what ready means. A run should produce something with this shape:
 
 ```markdown
-# Cold-eye: review until ready
+# Cold-eye — review until ready
 
 **Verdict:** fails a hostile read
 
 ## Ranked changes
 
-1. **F-001** · test 10 · no_close
+1. **F-001** · test 10 — no_close
    Absent: the procedure, what “ready” means
    Cold reader: keeps repeating with no exit.
    Put: Name the readiness criterion, then hand the file over and stop.

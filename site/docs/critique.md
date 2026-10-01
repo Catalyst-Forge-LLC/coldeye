@@ -7,7 +7,7 @@ The critique file is what the author reads. The **cold-eye** skill writes it. Sh
 1. Title: `Cold-eye — <subject>`
 2. Verdict: holds, close, or fails a hostile read. A system may split card vs system.
 3. Ranked changes
-4. What to cut
+4. What to cut: lines that mislead or belong on another surface, not wording to tighten. `None.` when nothing qualifies.
 5. Protect
 
 Every finding has an id, a test number, a type, then a quoted line or an absence. Cold reader: what they do instead. Put: what to put in the file. No put → drop it.

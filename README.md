@@ -37,7 +37,7 @@ You get a ranked finding in the critique file:
 ```markdown
 **Verdict:** close
 
-1. **F-001** · test 2 · invented
+1. **F-001** · test 2 — invented
    > Install the package and launch the app.
    Cold reader: installs the package, then guesses a launch command or stops.
    Put: The exact launch command on the next line, and what the reader sees when the app is running.

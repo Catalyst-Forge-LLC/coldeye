@@ -27,6 +27,22 @@ test("skill is the critique hour and does not name a CLI", () => {
 	assert.doesNotMatch(skill, /API key/);
 });
 
+test("critique shape defines the verdicts and scopes What to cut", () => {
+	const critique = readFileSync(
+		join(skillDir("cold-eye"), "references", "critique.md"),
+		"utf8",
+	).replace(/\r\n/g, "\n");
+	assert.match(critique, /\*\*What each verdict means:\*\*/);
+	assert.match(critique, /Pick the verdict from the worst ranked change/);
+	assert.match(critique, /Wording you would only\s+tighten is not a cut/);
+	const home = readFileSync(join(packageRoot, "site", "pages", "home.md"), "utf8");
+	const readme = readFileSync(join(packageRoot, "README.md"), "utf8");
+	for (const text of [home, readme]) {
+		assert.doesNotMatch(text, /test \d+ · /);
+		assert.doesNotMatch(text, /unsupported detail: this claim has no source/);
+	}
+});
+
 test("package ships skills and has no bin", () => {
 	const pkg = JSON.parse(readFileSync(join(packageRoot, "package.json"), "utf8")) as {
 		bin?: unknown;
