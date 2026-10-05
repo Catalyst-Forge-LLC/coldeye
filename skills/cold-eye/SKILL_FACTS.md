@@ -2,7 +2,7 @@
 skill_facts_version: "0.1.0"
 name: Cold-eye
 developer: Catalyst Forge
-version: 0.1.18
+version: 0.1.19
 status: active
 license: MIT
 kind: cursor-skill
@@ -40,7 +40,7 @@ credits:
 | | |
 |---|---|
 | **Developer** | Catalyst Forge |
-| **Version** | 0.1.18 |
+| **Version** | 0.1.19 |
 | **Status** | active |
 | **License** | MIT |
 | **Kind** | cursor-skill |
