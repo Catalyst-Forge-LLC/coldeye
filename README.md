@@ -11,7 +11,9 @@ to ship.
 
 Cold-eye is a readiness pass on anything shipped, deemed done, or
 ready to ship. An agent reads the skill and writes a critique.
-Verdict first, then a ranked list. The subject does not change.
+Verdict first, then a ranked list. The subject does not change. It reconstructs
+what a newcomer can understand from the public page before checking the
+instructions and artifact. Weak persuasion alone does not fail a runnable job.
 
 **Get started:** pick the agent, install the skill, then run the
 sample checklist at

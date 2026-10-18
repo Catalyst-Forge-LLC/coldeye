@@ -59,3 +59,9 @@ F-001 goes first. First-reader cost is the agent who cannot
 write the deliverable. The lockup lie is real and ranks
 second. Do not lead with the sharper sentence if the missing
 file blocks the hour.
+
+## Public comprehension
+
+Use `comprehension.md` for worked and do-not-emit cases at the entry point.
+The same tests and verdict meanings apply. Persuasion alone cannot create
+a ranked change or lower a readiness verdict.

@@ -84,9 +84,14 @@ Read in first-reader order, then open what shipped:
 5. The spec.
 6. The named tools — actually open them. "Match the system" is
    not a memory check. Open `package.json` `files`. Then run
-   `npm pack --dry-run` (or `pnpm pack --dry-run`). That list
+   `npm pack --dry-run --ignore-scripts`. That list
    is what ships. What only lives in the repo is another
    surface. They can lie in different ways.
+
+At the lockup and brochure steps, follow `references/comprehension.md`.
+Reconstruct the public promise before internal specifications, then compare
+it with the artifact. This reading step uses the existing ten tests. Weak
+persuasion alone does not fail a runnable procedure.
 
 A lie the first reader hits costs more than a lie in the spec.
 

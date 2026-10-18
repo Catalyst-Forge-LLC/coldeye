@@ -24,6 +24,8 @@ bundled_artifacts:
     kind: other
   - path: references/examples.md
     kind: other
+  - path: references/comprehension.md
+    kind: other
 egress:
   telemetry: none
   destinations: []
@@ -84,4 +86,4 @@ Hostile read of anything shipped, deemed done, or ready to ship — a skill, a s
 ---
 *Generated with [SkillFacts](https://skillfacts.dev)*
 
-[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqVUcFuFDEM_ZXI5-wslTjlWglRsT3BraqqNPHORJuJg-2ZdrRaiY_gC_kSlAAthx7gZCt5fvZ77wwruCsLxc8IDq4pxx1uCBYirpipIrdnrz5vouYD8dg-V2RJVMDBu-FqeA8WRL0uAg580LQ2TE4BizTW25svYOGUSgQHYWEh3skp5QwW6sKVOuojiaaMhtFHQ0fjy6ZTKqORKdWK0ZqIOGM0kQpaQ9yRm1HqCPPj23fjTee1rakYek2KrVYfTn7sLWOloe1mWrH4EhDcGYQWbh1MqlXcfj8mnZbHIdC8_2PArhuwOxyu94Fy_OVUXR5zkuktpy4WUhHlJWiiIg-MPkx92YQ5gwN8rjmFpGChoD4Rn8BBodJ4jymjbKI4g4OmdffESTupEuXGdkTGEjCCu7u38LiUmDE-eNZ09EEF3N0ZqtcJHHz-dHM4DHN8TYK03XyxL5AXPtkHTpq-LvjPA_js55pR3hq4t4Ajo0hTrphxRuXtVWhE0VR8t6gpuViYaMbqx7_j-G34EHEFCy1DSUqd538TU15K8Np8U17w8hMeegrQ
+[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqVkkFu3DAMRa8icC17ki61DVA06GTV7oIg0EgcWxhZVEnaiTEYoIfoCXuSQm6bdJFFuhIhfX2K7-sMC7hrC8VPCA5uKMcOVwQLERfMVJHbtlefV1HzkXhohwuyJCrg4Kq_7j9cgQVRr7OAAx80LU2UU8Aizfbu9itYOKUSwUGYWYg7OaWcwUKdudKm-kSiKaNh9NHQ0fiy6pjKYGRMtWK0JiJOGE2kgtYQb8rVKG0K8_P7D-PN5mtbUTFsa1Jsa_Xh5IetZKzUt95MCxZfAoI7g9DMrYJRtYrb7Yak43zoA027vwS6jUC339_sAuX4G1WdDznJ-Baqi4VURHkOmqjII6MP49ZsxJzBAT7XnEJSsFBQn4hP4KBQab7HlFFWUZzAQZu1e-Kkm6kS5eZ2RMYSMIK7f7BwmEvMGB89azr6oALu_gzV6wgOvny-3e_7Kb4mQdrefLEvkhc_2QVOmr7N-O4L-OynmlHe34GmyjhiaT_prVsPFnBgFGm8FDNOqLy-4okomorfwLb5LxZGmrD64d8Q_8TUR1zAQktektLm8785K88leG20lWe8_AILEB4R

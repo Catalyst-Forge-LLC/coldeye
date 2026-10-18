@@ -110,7 +110,7 @@ test("site dev claims the LocalSlip lease by name", () => {
 });
 
 test("package tarball lists the skill folder", () => {
-	const out = execFileSync("pnpm", ["pack", "--dry-run"], {
+	const out = execFileSync("npm", ["pack", "--dry-run", "--json", "--ignore-scripts"], {
 		cwd: packageRoot,
 		encoding: "utf8",
 		shell: process.platform === "win32",

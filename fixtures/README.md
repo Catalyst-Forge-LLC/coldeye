@@ -6,3 +6,7 @@ skill writes the critique; nothing here is a command-line corpus.
 
 A finding on `clean/` that is only a wording preference is a miss
 of the product.
+
+The five `comprehension-*` subjects calibrate newcomer reconstruction. Each
+expected file names what to preserve as well as any material defect. These
+are manual behavioral cases, not evidence that a model run has passed.

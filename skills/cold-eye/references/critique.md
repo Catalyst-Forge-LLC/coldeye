@@ -53,6 +53,9 @@ findings at all.
 
 **Verdict:** <one form from above>
 
+**Newcomer understanding:** <public reconstruction and source locations,
+or not applicable with reason>
+
 ## Ranked changes
 
 1. **F-001** · test <N> — <type>

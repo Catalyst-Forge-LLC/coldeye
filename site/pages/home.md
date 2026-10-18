@@ -1,17 +1,10 @@
 ---
-title: Check whether a newcomer can use and understand what you are about to ship.
-description: An installable skill for AI agents. Check whether a newcomer can understand and use what you are about to ship.
+title: "Find what a newcomer has to guess."
+description: "Before you hand off a finished guide, site, or package, let your agent read it without your explanations. Cold-eye finds missing steps and conflicting claims, so you can repair the handoff."
 order: 0
 ---
 
-An installable skill for AI agents. Cold-eye checks whether a newcomer can understand and use what you are about to ship. Give it a finished artifact: a guide, a README, a skill, a spec, a site, a package, or a repo.
-
-Your agent follows the skill and writes a critique file. Verdict first, then a ranked list of missing instructions, contradictions, and unsupported claims. The subject does not change. Hostile is the stance after you know the job: no credit for intent.
-
-<div class="cta-row">
-  <a class="cta cta-primary" href="/docs/install">Install in your agent</a>
-  <a class="cta cta-secondary" href="https://github.com/Catalyst-Forge-LLC/coldeye">View on GitHub</a>
-</div>
+<section class="value-hero" aria-label="Cold-eye overview"><div class="value-intro"><p class="value-kind">Review skill for your AI agent</p><h1>Find what a newcomer has to guess.</h1><p class="value-lede">Before you hand off a finished guide, site, or package, let your agent read it without your explanations. Cold-eye finds missing steps and conflicting claims, so you can repair the handoff.</p><div class="cta-row"><a class="cta cta-primary" href="/docs/install">Install Cold-eye</a><a class="cta cta-secondary" href="#one-example-illustrative">See a critique</a></div><p class="value-limit">Your agent writes a critique. The reviewed files stay unchanged unless you ask for edits.</p></div><figure class="value-proof"><figcaption>Illustrative example</figcaption><p><strong>The guide says</strong><br>“Install the package and launch the app.”</p><div class="value-result"><p><strong>Finding: the launch command is missing.</strong><br>A newcomer can install it, but must guess how to start it.</p></div><p><strong>Next edit</strong><br>Add the exact command and what a successful launch looks like.</p><p class="value-note">Verdict: close. A concrete repair, with the original guide left intact.</p></figure></section>
 
 ## One example (illustrative)
 
