@@ -1,35 +1,40 @@
 ---
-title: "Find what a newcomer has to guess."
-description: "Before you hand off a finished guide, site, or package, let your agent read it without your explanations. Cold-eye finds missing steps and conflicting claims, so you can repair the handoff."
+title: "Find the gaps that leave users stuck."
+description: "About to share a README, guide, skill, or site? Cold-eye gives your AI agent a repeatable review method. You get a report that quotes the problem, explains where a new user gets stuck, and tells you what to fix before the handoff."
 order: 0
 ---
 
-<section class="value-hero" aria-label="Cold-eye overview"><div class="value-intro"><p class="value-kind">Review skill for your AI agent</p><h1>Find what a newcomer has to guess.</h1><p class="value-lede">Before you hand off a finished guide, site, or package, let your agent read it without your explanations. Cold-eye finds missing steps and conflicting claims, so you can repair the handoff.</p><div class="cta-row"><a class="cta cta-primary" href="/docs/install">Install Cold-eye</a><a class="cta cta-secondary" href="#one-example-illustrative">See a critique</a></div><p class="value-limit">Your agent writes a critique. The reviewed files stay unchanged unless you ask for edits.</p></div><figure class="value-proof"><figcaption>Illustrative example</figcaption><p><strong>The guide says</strong><br>“Install the package and launch the app.”</p><div class="value-result"><p><strong>Finding: the launch command is missing.</strong><br>A newcomer can install it, but must guess how to start it.</p></div><p><strong>Next edit</strong><br>Add the exact command and what a successful launch looks like.</p><p class="value-note">Verdict: close. A concrete repair, with the original guide left intact.</p></figure></section>
-
-## One example (illustrative)
-
-You wrote: “Install the package and launch the app.”
-
-Cold-eye finds: the guide names the package but never gives the launch command. A new user cannot finish setup from the instructions given.
-
-You get: a ranked finding that quotes the line, says what a newcomer does instead, and says what to add.
-
-```markdown
-# Cold-eye — setup guide
-
-**Verdict:** close
-
-## Ranked changes
-
-1. **F-001** · test 2 — invented
-   > Install the package and launch the app.
-   Cold reader: installs the package, then guesses a launch command or stops.
-   Put: The exact launch command on the next line, and what the reader sees when the app is running.
-```
-
-Test 2 asks what a newcomer still has to invent. Here it is the launch command. One missing command is a small edit, so the verdict is **close**. The guide itself is unchanged.
-
-[Install in your agent](/docs/install) · [See a clean excerpt](#clean-verdict-illustrative) · [See the first-run sample](#the-first-run-sample)
+<section class="value-hero" aria-label="Cold-eye overview">
+<div class="value-intro"><div class="value-headline">
+<p class="value-kind">Review skill for your AI agent</p>
+<h1>Find the gaps that leave users stuck.</h1></div>
+<div class="value-pitch"><p class="value-lede">About to share a README, guide, skill, or site? Cold-eye gives your AI agent a repeatable review method. You get a report that quotes the problem, explains where a new user gets stuck, and tells you what to fix before the handoff.</p>
+<div class="cta-row"><a class="cta cta-primary" href="/docs/install">Install Cold-eye</a><a class="cta cta-secondary" href="#one-example-illustrative">See before, report, and after</a></div>
+<p class="value-limit">You receive a Markdown critique with prioritized fixes. You decide which edits to make; reviewing leaves the original files unchanged.</p></div>
+</div>
+<figure class="value-proof worked-example" id="one-example-illustrative" tabindex="-1">
+<figcaption>From a blocked setup to a usable guide</figcaption>
+<p class="example-context">A fictional notes app. Its setup guide omits a launch command that already exists in the app’s <code>package.json</code>.</p>
+<section class="example-step" aria-labelledby="example-before">
+<h2 id="example-before"><span>1 · Before</span> The user installs it, then gets stuck</h2>
+<blockquote><p>Run <code>npm install</code>.<br>Launch the app.</p></blockquote>
+</section>
+<section class="example-step example-report" aria-labelledby="example-report">
+<h2 id="example-report"><span>2 · Cold-eye’s report</span> The missing step, located and explained</h2>
+<p class="example-file">Excerpt from <code>README.cold-eye.md</code></p>
+<p><strong>F-001 · Missing launch command</strong><br><code>README.md → Quick start</code></p>
+<p><strong>Cold reader:</strong> Installs the dependencies, then has to guess how to open the app.</p>
+<p><strong>Put:</strong> Add <code>npm start</code>, the command defined in <code>package.json</code>, and say how to recognize a successful launch.</p>
+</section>
+<section class="example-step example-after" aria-labelledby="example-after">
+<h2 id="example-after"><span>3 · After you make the edit</span> The guide now gets them to the app</h2>
+<blockquote><p>Run <code>npm install</code>, then <code>npm start</code>.<br>Open the local URL printed in the terminal. You should see the Notes page.</p></blockquote>
+<p class="example-payoff">A new user can finish setup without asking you for the missing step.</p>
+</section>
+<p class="value-note">Illustrative review and author’s edit, not a recorded tool run. Sample commands belong to the fictional app.</p>
+<a class="example-download" href="/samples/setup-guide.cold-eye.md">Read the complete sample report →</a>
+</figure>
+</section>
 
 ## What it reads, writes, and changes
 

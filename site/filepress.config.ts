@@ -5,7 +5,7 @@ const npm = "https://www.npmjs.com/package/coldeye";
 
 export default defineFilepressConfig({
 	title: "Cold-eye",
-	description: "Before you hand off a finished guide, site, or package, let your agent read it without your explanations. Cold-eye finds missing steps and conflicting claims, so you can repair the handoff.",
+	description: "About to share a README, guide, skill, or site? Cold-eye gives your AI agent a repeatable review method. You get a report that quotes the problem, explains where a new user gets stuck, and tells you what to fix before the handoff.",
 	tagline: "A hostile read of what claims to be done.",
 	lede: "Review skill for your AI agent",
 	url: "https://coldeye.dev",
