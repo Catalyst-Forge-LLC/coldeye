@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="site/static/logo.png" alt="Cold-eye" width="128" />
+  <img src="https://coldeye.dev/logo.png" alt="Cold-eye" width="128" />
 </p>
 
 # Cold-eye
@@ -26,26 +26,29 @@ Claude.ai without project files is not a supported first-use route. The install 
 
 **Site:** [coldeye.dev](https://coldeye.dev)
 
-## One example (illustrative)
+## From a blocked setup to a usable guide
 
-You wrote: “Install the package and launch the app.”
+Illustrative review of a fictional notes app. Its `package.json` already defines `npm start`; the guide leaves that command out.
 
-Cold-eye finds: the guide names the package but never gives the
-launch command. A new user cannot finish setup from the
-instructions given.
+**Before: the user installs it, then gets stuck.**
 
-You get a ranked finding in the critique file:
+> Run `npm install`. Launch the app.
+
+**Cold-eye's report locates the missing step:**
 
 ```markdown
-**Verdict:** close
-
-1. **F-001** · test 2 — invented
-   > Install the package and launch the app.
-   Cold reader: installs the package, then guesses a launch command or stops.
-   Put: The exact launch command on the next line, and what the reader sees when the app is running.
+F-001 · Missing launch command
+README.md → Quick start
+Cold reader: Installs the dependencies, then has to guess how to open the app.
+Put: Add npm start, the command defined in package.json, and say how to recognize a successful launch.
 ```
 
-The guide itself is unchanged.
+**After you make the edit:**
+
+> Run `npm install`, then `npm start`.
+> Open the local URL printed in the terminal. You should see the Notes page.
+
+The new user can finish setup without asking for the missing step. Cold-eye writes the critique; you make the edit or explicitly ask your agent to apply it. This is a sample report and author edit, not a recorded run. [Complete sample report](https://coldeye.dev/samples/setup-guide.cold-eye.md).
 
 ## First run
 
